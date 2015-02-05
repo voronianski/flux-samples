@@ -1,0 +1,17 @@
+{
+  "main": "js/app.js",
+  "scripts": {
+    "start": "npm run build; npm run server",
+    "server": "../node_modules/6to5/bin/6to5-node server.js",
+    "build": "../node_modules/browserify/bin/cmd.js js/app.js > build/bundle.js",
+    "watch": "../node_modules/watchify/bin/cmd.js . -o build/bundle.js -v -d"
+  },
+  "browserify": {
+    "transform": [
+      "6to5ify",
+      "reactify",
+      "envify"
+    ]
+  },
+  "dependencies": {}
+}
