@@ -28,12 +28,13 @@ Here is a sample code snippet:
 ```js
 // server.js
 app.get('/', function (req, res) {
-    var data = {
-        SampleStore: {
-            storeAttribute: 'some store data'
-        }
-    }
+    // Option1
+    SampleActions.anSynchronousActionThatLoadsData(sampleStoreData)
 
+    // Option 2
+    var data = {
+        SampleStore: sampleStoreData
+    }
     alt.bootstrap(data)
 
     // flush is an analogue to `takeSnapshot()` except that it also resets stores
