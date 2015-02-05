@@ -20,8 +20,10 @@
     "marty": "^0.8.9",
     "mcfly": "0.0.9",
     "object-assign": "^2.0.0",
+    "q": "^1.1.2",
     "react": "^0.12.2",
     "react-router": "^0.11.6",
+    "react-store": "^0.1.0",
     "reflux": "^0.2.4"
   },
   "devDependencies": {
