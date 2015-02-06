@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 bower_components
+.idea
 *.log
 
 facebook-flux/build/bundle.js
@@ -10,4 +11,4 @@ alt/build/bundle.js
 mcfly/build/bundle.js
 marty/build/bundle.js
 flummox/build/bundle.js
-.idea
+react-flux/build/bundle.js
