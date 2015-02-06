@@ -1,3 +1,5 @@
+'use strict';
+
 var Flux = require('react-flux');
 var api = require('../util/api');
 

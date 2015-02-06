@@ -1,3 +1,5 @@
+'use strict';
+
 var Flux = require('react-flux');
 var Immutable = require('Immutable');
 var CartConstants = require('../actions/CartActions').Constants;
