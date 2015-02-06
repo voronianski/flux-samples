@@ -37,6 +37,7 @@ The list of Flux related implementations used in this demo.
 * [x] [Marty.js](https://github.com/voronianski/flux-samples/tree/master/marty)
 * [x] [McFly](https://github.com/voronianski/flux-samples/tree/master/mcfly)
 * [x] [Flummox](https://github.com/voronianski/flux-samples/tree/master/flummox)
+* [x] [React-Flux](https://github.com/voronianski/flux-samples/tree/master/react-flux)
 
 ### Next
 
@@ -57,6 +58,7 @@ The list of Flux related implementations used in this demo.
 - http://martyjs.org
 - http://fluxxor.com
 - http://deloreanjs.com
+- https://github.com/kjda/ReactFlux
 
 ### Articles
 

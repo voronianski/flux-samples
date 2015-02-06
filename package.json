@@ -19,10 +19,12 @@
     "flummox": "~2.2.1",
     "flux": "^2.0.1",
     "fluxible": "^0.1.5",
+    "immutable": "^3.6.2",
     "marty": "^0.8.9",
     "mcfly": "0.0.9",
     "object-assign": "^2.0.0",
     "react": "^0.12.2",
+    "react-flux": "0.0.16",
     "react-router": "^0.11.6",
     "reflux": "^0.2.4"
   },
