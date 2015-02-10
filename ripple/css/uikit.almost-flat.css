@@ -1,0 +1,7453 @@
+/*! UIkit 2.16.2 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Base
+ ========================================================================== */
+/*
+ * 1. Normalizes default `font-family` and sets `font-size` here to support `rem` units
+ body /deep/ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ * 3. Style
+ */
+html {
+  /* 1 */
+  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  background: #ffffff;
+  color: #444444;
+}
+/*
+ * Removes default margin.
+ */
+body {
+  margin: 0;
+}
+/* Links
+ ========================================================================== */
+/*
+ * Remove the gray background color from active links in IE 10.
+ */
+body /deep/ a {
+  background: transparent;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+body /deep/ a:active,
+body /deep/ a:hover {
+  outline: 0;
+}
+/*
+ * Style
+ */
+body /deep/ a,
+body /deep/ .uk-link {
+  color: #0077dd;
+  text-decoration: none;
+  cursor: pointer;
+}
+body /deep/ a:hover,
+body /deep/ .uk-link:hover {
+  color: #005599;
+  text-decoration: underline;
+}
+/* Text-level semantics
+ ========================================================================== */
+/*
+ body /deep/ * Addresses styling not present in Chrome, Safari, Opera and IE 8/9/10.
+ */
+body /deep/ abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in Firefox
+ */
+body /deep/ b,
+body /deep/ strong {
+  font-weight: bold;
+}
+/*
+ * 1. Address odd `em`-unit font size rendering in all browsers.
+ * 2. Consolas has a better baseline in running text compared to `Courier`
+ */
+body /deep/ :not(pre) > code,
+body /deep/ :not(pre) > kbd,
+body /deep/ :not(pre) > samp {
+  /* 1 */
+  font-size: 12px;
+  /* 2 */
+  font-family: Consolas, monospace, serif;
+  /* 3 */
+  color: #dd0055;
+  white-space: nowrap;
+  padding: 0 4px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  background: #fafafa;
+}
+/*
+ * Emphasize
+ */
+body /deep/ em {
+  color: #dd0055;
+}
+/*
+ * Insert
+ */
+body /deep/ ins {
+  background: #ffffaa;
+  color: #444444;
+  text-decoration: none;
+}
+/*
+ * Mark
+ * Note: Addresses styling not present in IE 8/9.
+ */
+body /deep/ mark {
+  background: #ffffaa;
+  color: #444444;
+}
+/*
+ * Quote
+ */
+body /deep/ q {
+  font-style: italic;
+}
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+body /deep/ small {
+  font-size: 80%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+body /deep/ sub,
+body /deep/ sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+body /deep/ sup {
+  top: -0.5em;
+}
+body /deep/ sub {
+  bottom: -0.25em;
+}
+/* Images
+ ========================================================================== */
+/*
+ * 1. Responsiveness: Sets a maximum width relative to the parent and auto scales the height
+ * 2. Corrects `max-width` behavior if padding and border are used
+ * 3. Remove border when inside `a` element in IE 8/9/10.
+ * 4. Remove the gap between images and the bottom of their containers
+ */
+body /deep/ img {
+  /* 1 */
+  max-width: 100%;
+  height: auto;
+  /* 2 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 3 */
+  border: 0;
+  /* 4 */
+  vertical-align: middle;
+}
+/*
+ * Preserve original image dimensions
+ */
+body /deep/ .uk-img-preserve,
+body /deep/ .uk-img-preserve img {
+  max-width: none;
+}
+/*
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+body /deep/ svg:not(:root) {
+  overflow: hidden;
+}
+/* Block elements
+ ========================================================================== */
+/*
+ * Reset margin
+ */
+body /deep/ blockquote,
+body /deep/ figure {
+  margin: 0;
+}
+/*
+ * Margins
+ */
+body /deep/ p,
+body /deep/ ul,
+body /deep/ ol,
+body /deep/ dl,
+body /deep/ blockquote,
+body /deep/ pre,
+body /deep/ address,
+body /deep/ fieldset,
+body /deep/ figure {
+  margin: 0 0 15px 0;
+}
+body /deep/ * + p,
+body /deep/ * + ul,
+body /deep/ * + ol,
+body /deep/ * + dl,
+body /deep/ * + blockquote,
+body /deep/ * + pre,
+body /deep/ * + address,
+body /deep/ * + fieldset,
+body /deep/ * + figure {
+  margin-top: 15px;
+}
+/* Headings
+ ========================================================================== */
+body /deep/ h1,
+body /deep/ h2,
+body /deep/ h3,
+body /deep/ h4,
+body /deep/ h5,
+body /deep/ h6 {
+  margin: 0 0 15px 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #444444;
+  text-transform: none;
+}
+/*
+ * Margins
+ */
+body /deep/ * + h1,
+body /deep/ * + h2,
+body /deep/ * + h3,
+body /deep/ * + h4,
+body /deep/ * + h5,
+body /deep/ * + h6 {
+  margin-top: 25px;
+}
+/*
+ * Sizes
+ */
+body /deep/ h1,
+body /deep/ .uk-h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+body /deep/ h2,
+body /deep/ .uk-h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+body /deep/ h3,
+body /deep/ .uk-h3 {
+  font-size: 18px;
+  line-height: 24px;
+}
+body /deep/ h4,
+body /deep/ .uk-h4 {
+  font-size: 16px;
+  line-height: 22px;
+}
+body /deep/ h5,
+body /deep/ .uk-h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+body /deep/ h6,
+body /deep/ .uk-h6 {
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Lists
+ ========================================================================== */
+body /deep/ ul,
+body /deep/ ol {
+  padding-left: 30px;
+}
+/*
+ * Reset margin for nested lists
+ */
+body /deep/ ul > li > ul,
+body /deep/ ul > li > ol,
+body /deep/ ol > li > ol,
+body /deep/ ol > li > ul {
+  margin: 0;
+}
+/* Description lists
+ ========================================================================== */
+body /deep/ dt {
+  font-weight: bold;
+}
+body /deep/ dd {
+  margin-left: 0;
+}
+/* Horizontal rules
+ ========================================================================== */
+/*
+ * 1. Address differences between Firefox and other browsers.
+ * 2. Style
+ */
+body /deep/ hr {
+  /* 1 */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  /* 2 */
+  margin: 15px 0;
+  border: 0;
+  border-top: 1px solid #dddddd;
+}
+/* Address
+ ========================================================================== */
+body /deep/ address {
+  font-style: normal;
+}
+/* Blockquotes
+ ========================================================================== */
+body /deep/ blockquote {
+  padding-left: 15px;
+  border-left: 5px solid #dddddd;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: italic;
+}
+/* Preformatted text
+ ========================================================================== */
+/*
+ * 1. Contain overflow in all browsers.
+ */
+body /deep/ pre {
+  padding: 10px;
+  background: #fafafa;
+  font: 12px / 18px Consolas, monospace, serif;
+  color: #444444;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  /* 1 */
+  overflow: auto;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+/* Selection pseudo-element 
+ ========================================================================== */
+body /deep/ ::-moz-selection {
+  background: #3399ff;
+  color: #ffffff;
+  text-shadow: none;
+}
+body /deep/ ::selection {
+  background: #3399ff;
+  color: #ffffff;
+  text-shadow: none;
+}
+/* HTML5 elements
+ ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+body /deep/ article,
+body /deep/ aside,
+body /deep/ details,
+body /deep/ figcaption,
+body /deep/ figure,
+body /deep/ footer,
+body /deep/ header,
+body /deep/ main,
+body /deep/ nav,
+body /deep/ section,
+body /deep/ summary {
+  display: block;
+}
+/*
+ body /deep/ * Addresses inconsistent vertical alignment of `progress` in Chrome, Firefox and Opera.
+ */
+body /deep/ progress {
+  vertical-align: baseline;
+}
+/*
+ body /deep/ * Prevent displaying `audio` without controls in Chrome, Safari and Opera
+ */
+body /deep/ audio:not([controls]) {
+  display: none;
+}
+/*
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE and Safari
+ */
+body /deep/ [hidden],
+body /deep/ template {
+  display: none;
+}
+/* Iframe
+ ========================================================================== */
+body /deep/ iframe {
+  border: 0;
+}
+/* Fix viewport for IE10 snap mode
+ ========================================================================== */
+body /deep/ @media screen and (max-width: 400px) {
+  body /deep/ @-ms-viewport {
+    width: device-width;
+  }
+}
+/* ========================================================================
+   Component: Grid
+ ========================================================================== */
+/*
+ * 1. Needed for the gutter
+ * 2. Makes grid more robust so that it can be used with other block elements like lists
+ */
+body /deep/ .uk-grid {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* 1 */
+  margin: 0 0 0 -25px;
+  /* 2 */
+  padding: 0;
+  list-style: none;
+}
+/*
+ * DEPRECATED
+ * Micro clearfix
+ body /deep/ * Can't use `table` because it creates a 1px gap when it becomes a flex item, only in Webkit
+ */
+body /deep/ .uk-grid:before,
+body /deep/ .uk-grid:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+body /deep/ .uk-grid:after {
+  clear: both;
+}
+/*
+ * Grid cell
+ * 1. Space is allocated solely based on content dimensions
+ * 2. Makes grid more robust so that it can be used with other block elements
+ * 3. Create horizontal gutter
+ * 4. DEPRECATED Using `float` to support IE9
+ */
+body /deep/ .uk-grid > * {
+  /* 1 */
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  padding-left: 25px;
+  /* 4 */
+  float: left;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-grid > * > :last-child {
+  margin-bottom: 0;
+}
+/* Grid gutter
+ ========================================================================== */
+/*
+ * Vertical gutter
+ */
+body /deep/ .uk-grid + .uk-grid {
+  margin-top: 25px;
+}
+/*
+ * This class is set by JavaScript and applies a vertical gutter if the columns stack or float into the next row
+ * Higher specificity to override margin
+ */
+body /deep/ .uk-grid > .uk-grid-margin {
+  margin-top: 25px;
+}
+/*
+ * Vertical gutter for panels
+ */
+body /deep/ .uk-grid > * > .uk-panel + .uk-panel {
+  margin-top: 25px;
+}
+/*
+ * Larger gutter for large screens
+ */
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  /* Horizontal gutter */
+  body /deep/ .uk-grid:not(.uk-grid-preserve) {
+    margin-left: -35px;
+  }
+  body /deep/ .uk-grid:not(.uk-grid-preserve) > * {
+    padding-left: 35px;
+  }
+  /* Vertical gutter */
+  body /deep/ .uk-grid:not(.uk-grid-preserve) + .uk-grid {
+    margin-top: 35px;
+  }
+  body /deep/ .uk-grid:not(.uk-grid-preserve) > .uk-grid-margin {
+    margin-top: 35px;
+  }
+  /* Vertical gutter for panels */
+  body /deep/ .uk-grid:not(.uk-grid-preserve) > * > .uk-panel + .uk-panel {
+    margin-top: 35px;
+  }
+}
+/*
+ * Small gutter
+ * Higher specificity to override large gutter
+ */
+body /deep/ .uk-grid.uk-grid-small {
+  margin-left: -10px;
+}
+body /deep/ .uk-grid.uk-grid-small > * {
+  padding-left: 10px;
+}
+body /deep/ .uk-grid.uk-grid-small + .uk-grid-small {
+  margin-top: 10px;
+}
+body /deep/ .uk-grid.uk-grid-small > .uk-grid-margin {
+  margin-top: 10px;
+}
+body /deep/ .uk-grid.uk-grid-small > * > .uk-panel + .uk-panel {
+  margin-top: 10px;
+}
+/* Modifier: `uk-grid-divider`
+ ========================================================================== */
+/*
+ * Horizontal divider
+ body /deep/ * Does not work with `uk-push-*`, `uk-pull-*` and not if the columns float into the next row
+ */
+body /deep/ .uk-grid-divider:not(:empty) {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+body /deep/ .uk-grid-divider > * {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+body /deep/ .uk-grid-divider > [class*='uk-width-1-']:not(.uk-width-1-1):nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-2-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-3-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-4-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-5-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-6-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-7-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-8-']:nth-child(n+2),
+body /deep/ .uk-grid-divider > [class*='uk-width-9-']:nth-child(n+2) {
+  border-left: 1px solid #dddddd;
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  .uk-grid-divider > [class*='uk-width-medium-']:not(.uk-width-medium-1-1):nth-body /deep/ child(n+2) {
+    border-left: 1px solid #dddddd;
+  }
+}
+/* Desktop and bigger */
+body /deep/ @media (min-width: 960px) {
+  .uk-grid-divider > [class*='uk-width-large-']:not(.uk-width-large-1-1):nth-body /deep/ child(n+2) {
+    border-left: 1px solid #dddddd;
+  }
+}
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  /*
+     * Large gutter
+     */
+  body /deep/ .uk-grid-divider:not(.uk-grid-preserve):not(:empty) {
+    margin-left: -35px;
+    margin-right: -35px;
+  }
+  body /deep/ .uk-grid-divider:not(.uk-grid-preserve) > * {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  body /deep/ .uk-grid-divider:not(.uk-grid-preserve):empty {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+/*
+ * Vertical divider
+ */
+body /deep/ .uk-grid-divider:empty {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-top: 1px solid #dddddd;
+}
+/* Match panels in grids
+ ========================================================================== */
+body /deep/ .uk-grid-match > * {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/*
+ * 1. Behave like a block element
+ */
+body /deep/ .uk-grid-match > * > * {
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+  /* 1 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* Even grid cell widths
+ ========================================================================== */
+body /deep/ [class*='uk-grid-width'] > * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+body /deep/ .uk-grid-width-1-2 > * {
+  width: 50%;
+}
+body /deep/ .uk-grid-width-1-3 > * {
+  width: 33.333%;
+}
+body /deep/ .uk-grid-width-1-4 > * {
+  width: 25%;
+}
+body /deep/ .uk-grid-width-1-5 > * {
+  width: 20%;
+}
+body /deep/ .uk-grid-width-1-6 > * {
+  width: 16.666%;
+}
+body /deep/ .uk-grid-width-1-10 > * {
+  width: 10%;
+}
+/* Phone landscape and bigger */
+body /deep/ @media (min-width: 480px) {
+  body /deep/ .uk-grid-width-small-1-2 > * {
+    width: 50%;
+  }
+  body /deep/ .uk-grid-width-small-1-3 > * {
+    width: 33.333%;
+  }
+  body /deep/ .uk-grid-width-small-1-4 > * {
+    width: 25%;
+  }
+  body /deep/ .uk-grid-width-small-1-5 > * {
+    width: 20%;
+  }
+  body /deep/ .uk-grid-width-small-1-6 > * {
+    width: 16.666%;
+  }
+  body /deep/ .uk-grid-width-small-1-10 > * {
+    width: 10%;
+  }
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-grid-width-medium-1-2 > * {
+    width: 50%;
+  }
+  body /deep/ .uk-grid-width-medium-1-3 > * {
+    width: 33.333%;
+  }
+  body /deep/ .uk-grid-width-medium-1-4 > * {
+    width: 25%;
+  }
+  body /deep/ .uk-grid-width-medium-1-5 > * {
+    width: 20%;
+  }
+  body /deep/ .uk-grid-width-medium-1-6 > * {
+    width: 16.666%;
+  }
+  body /deep/ .uk-grid-width-medium-1-10 > * {
+    width: 10%;
+  }
+}
+/* Desktop and bigger */
+body /deep/ @media (min-width: 960px) {
+  body /deep/ .uk-grid-width-large-1-2 > * {
+    width: 50%;
+  }
+  body /deep/ .uk-grid-width-large-1-3 > * {
+    width: 33.333%;
+  }
+  body /deep/ .uk-grid-width-large-1-4 > * {
+    width: 25%;
+  }
+  body /deep/ .uk-grid-width-large-1-5 > * {
+    width: 20%;
+  }
+  body /deep/ .uk-grid-width-large-1-6 > * {
+    width: 16.666%;
+  }
+  body /deep/ .uk-grid-width-large-1-10 > * {
+    width: 10%;
+  }
+}
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  body /deep/ .uk-grid-width-xlarge-1-2 > * {
+    width: 50%;
+  }
+  body /deep/ .uk-grid-width-xlarge-1-3 > * {
+    width: 33.333%;
+  }
+  body /deep/ .uk-grid-width-xlarge-1-4 > * {
+    width: 25%;
+  }
+  body /deep/ .uk-grid-width-xlarge-1-5 > * {
+    width: 20%;
+  }
+  body /deep/ .uk-grid-width-xlarge-1-6 > * {
+    width: 16.666%;
+  }
+  body /deep/ .uk-grid-width-xlarge-1-10 > * {
+    width: 10%;
+  }
+}
+/* Sub-objects: `uk-width-*`
+ ========================================================================== */
+body /deep/ [class*='uk-width'] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+/*
+ * Widths
+ */
+/* Whole */
+body /deep/ .uk-width-1-1 {
+  width: 100%;
+}
+/* Halves */
+body /deep/ .uk-width-1-2,
+body /deep/ .uk-width-2-4,
+body /deep/ .uk-width-3-6,
+body /deep/ .uk-width-5-10 {
+  width: 50%;
+}
+/* Thirds */
+body /deep/ .uk-width-1-3,
+body /deep/ .uk-width-2-6 {
+  width: 33.333%;
+}
+body /deep/ .uk-width-2-3,
+body /deep/ .uk-width-4-6 {
+  width: 66.666%;
+}
+/* Quarters */
+body /deep/ .uk-width-1-4 {
+  width: 25%;
+}
+body /deep/ .uk-width-3-4 {
+  width: 75%;
+}
+/* Fifths */
+body /deep/ .uk-width-1-5,
+body /deep/ .uk-width-2-10 {
+  width: 20%;
+}
+body /deep/ .uk-width-2-5,
+body /deep/ .uk-width-4-10 {
+  width: 40%;
+}
+body /deep/ .uk-width-3-5,
+body /deep/ .uk-width-6-10 {
+  width: 60%;
+}
+body /deep/ .uk-width-4-5,
+body /deep/ .uk-width-8-10 {
+  width: 80%;
+}
+/* Sixths */
+body /deep/ .uk-width-1-6 {
+  width: 16.666%;
+}
+body /deep/ .uk-width-5-6 {
+  width: 83.333%;
+}
+/* Tenths */
+body /deep/ .uk-width-1-10 {
+  width: 10%;
+}
+body /deep/ .uk-width-3-10 {
+  width: 30%;
+}
+body /deep/ .uk-width-7-10 {
+  width: 70%;
+}
+body /deep/ .uk-width-9-10 {
+  width: 90%;
+}
+/* Phone landscape and bigger */
+body /deep/ @media (min-width: 480px) {
+  /* Whole */
+  body /deep/ .uk-width-small-1-1 {
+    width: 100%;
+  }
+  /* Halves */
+  body /deep/ .uk-width-small-1-2,
+  body /deep/ .uk-width-small-2-4,
+  body /deep/ .uk-width-small-3-6,
+  body /deep/ .uk-width-small-5-10 {
+    width: 50%;
+  }
+  /* Thirds */
+  body /deep/ .uk-width-small-1-3,
+  body /deep/ .uk-width-small-2-6 {
+    width: 33.333%;
+  }
+  body /deep/ .uk-width-small-2-3,
+  body /deep/ .uk-width-small-4-6 {
+    width: 66.666%;
+  }
+  /* Quarters */
+  body /deep/ .uk-width-small-1-4 {
+    width: 25%;
+  }
+  body /deep/ .uk-width-small-3-4 {
+    width: 75%;
+  }
+  /* Fifths */
+  body /deep/ .uk-width-small-1-5,
+  body /deep/ .uk-width-small-2-10 {
+    width: 20%;
+  }
+  body /deep/ .uk-width-small-2-5,
+  body /deep/ .uk-width-small-4-10 {
+    width: 40%;
+  }
+  body /deep/ .uk-width-small-3-5,
+  body /deep/ .uk-width-small-6-10 {
+    width: 60%;
+  }
+  body /deep/ .uk-width-small-4-5,
+  body /deep/ .uk-width-small-8-10 {
+    width: 80%;
+  }
+  /* Sixths */
+  body /deep/ .uk-width-small-1-6 {
+    width: 16.666%;
+  }
+  body /deep/ .uk-width-small-5-6 {
+    width: 83.333%;
+  }
+  /* Tenths */
+  body /deep/ .uk-width-small-1-10 {
+    width: 10%;
+  }
+  body /deep/ .uk-width-small-3-10 {
+    width: 30%;
+  }
+  body /deep/ .uk-width-small-7-10 {
+    width: 70%;
+  }
+  body /deep/ .uk-width-small-9-10 {
+    width: 90%;
+  }
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  /* Whole */
+  body /deep/ .uk-width-medium-1-1 {
+    width: 100%;
+  }
+  /* Halves */
+  body /deep/ .uk-width-medium-1-2,
+  body /deep/ .uk-width-medium-2-4,
+  body /deep/ .uk-width-medium-3-6,
+  body /deep/ .uk-width-medium-5-10 {
+    width: 50%;
+  }
+  /* Thirds */
+  body /deep/ .uk-width-medium-1-3,
+  body /deep/ .uk-width-medium-2-6 {
+    width: 33.333%;
+  }
+  body /deep/ .uk-width-medium-2-3,
+  body /deep/ .uk-width-medium-4-6 {
+    width: 66.666%;
+  }
+  /* Quarters */
+  body /deep/ .uk-width-medium-1-4 {
+    width: 25%;
+  }
+  body /deep/ .uk-width-medium-3-4 {
+    width: 75%;
+  }
+  /* Fifths */
+  body /deep/ .uk-width-medium-1-5,
+  body /deep/ .uk-width-medium-2-10 {
+    width: 20%;
+  }
+  body /deep/ .uk-width-medium-2-5,
+  body /deep/ .uk-width-medium-4-10 {
+    width: 40%;
+  }
+  body /deep/ .uk-width-medium-3-5,
+  body /deep/ .uk-width-medium-6-10 {
+    width: 60%;
+  }
+  body /deep/ .uk-width-medium-4-5,
+  body /deep/ .uk-width-medium-8-10 {
+    width: 80%;
+  }
+  /* Sixths */
+  body /deep/ .uk-width-medium-1-6 {
+    width: 16.666%;
+  }
+  body /deep/ .uk-width-medium-5-6 {
+    width: 83.333%;
+  }
+  /* Tenths */
+  body /deep/ .uk-width-medium-1-10 {
+    width: 10%;
+  }
+  body /deep/ .uk-width-medium-3-10 {
+    width: 30%;
+  }
+  body /deep/ .uk-width-medium-7-10 {
+    width: 70%;
+  }
+  body /deep/ .uk-width-medium-9-10 {
+    width: 90%;
+  }
+}
+/* Desktop and bigger */
+body /deep/ @media (min-width: 960px) {
+  /* Whole */
+  body /deep/ .uk-width-large-1-1 {
+    width: 100%;
+  }
+  /* Halves */
+  body /deep/ .uk-width-large-1-2,
+  body /deep/ .uk-width-large-2-4,
+  body /deep/ .uk-width-large-3-6,
+  body /deep/ .uk-width-large-5-10 {
+    width: 50%;
+  }
+  /* Thirds */
+  body /deep/ .uk-width-large-1-3,
+  body /deep/ .uk-width-large-2-6 {
+    width: 33.333%;
+  }
+  body /deep/ .uk-width-large-2-3,
+  body /deep/ .uk-width-large-4-6 {
+    width: 66.666%;
+  }
+  /* Quarters */
+  body /deep/ .uk-width-large-1-4 {
+    width: 25%;
+  }
+  body /deep/ .uk-width-large-3-4 {
+    width: 75%;
+  }
+  /* Fifths */
+  body /deep/ .uk-width-large-1-5,
+  body /deep/ .uk-width-large-2-10 {
+    width: 20%;
+  }
+  body /deep/ .uk-width-large-2-5,
+  body /deep/ .uk-width-large-4-10 {
+    width: 40%;
+  }
+  body /deep/ .uk-width-large-3-5,
+  body /deep/ .uk-width-large-6-10 {
+    width: 60%;
+  }
+  body /deep/ .uk-width-large-4-5,
+  body /deep/ .uk-width-large-8-10 {
+    width: 80%;
+  }
+  /* Sixths */
+  body /deep/ .uk-width-large-1-6 {
+    width: 16.666%;
+  }
+  body /deep/ .uk-width-large-5-6 {
+    width: 83.333%;
+  }
+  /* Tenths */
+  body /deep/ .uk-width-large-1-10 {
+    width: 10%;
+  }
+  body /deep/ .uk-width-large-3-10 {
+    width: 30%;
+  }
+  body /deep/ .uk-width-large-7-10 {
+    width: 70%;
+  }
+  body /deep/ .uk-width-large-9-10 {
+    width: 90%;
+  }
+}
+/* Sub-object: `uk-push-*` and `uk-pull-*`
+ ========================================================================== */
+/*
+ * Source ordering
+ * Works only with `uk-width-medium-*`
+ */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ [class*='uk-push-'],
+  body /deep/ [class*='uk-pull-'] {
+    position: relative;
+  }
+  /*
+     * Push
+     */
+  /* Halves */
+  body /deep/ .uk-push-1-2,
+  body /deep/ .uk-push-2-4,
+  body /deep/ .uk-push-3-6,
+  body /deep/ .uk-push-5-10 {
+    left: 50%;
+  }
+  /* Thirds */
+  body /deep/ .uk-push-1-3,
+  body /deep/ .uk-push-2-6 {
+    left: 33.333%;
+  }
+  body /deep/ .uk-push-2-3,
+  body /deep/ .uk-push-4-6 {
+    left: 66.666%;
+  }
+  /* Quarters */
+  body /deep/ .uk-push-1-4 {
+    left: 25%;
+  }
+  body /deep/ .uk-push-3-4 {
+    left: 75%;
+  }
+  /* Fifths */
+  body /deep/ .uk-push-1-5,
+  body /deep/ .uk-push-2-10 {
+    left: 20%;
+  }
+  body /deep/ .uk-push-2-5,
+  body /deep/ .uk-push-4-10 {
+    left: 40%;
+  }
+  body /deep/ .uk-push-3-5,
+  body /deep/ .uk-push-6-10 {
+    left: 60%;
+  }
+  body /deep/ .uk-push-4-5,
+  body /deep/ .uk-push-8-10 {
+    left: 80%;
+  }
+  /* Sixths */
+  body /deep/ .uk-push-1-6 {
+    left: 16.666%;
+  }
+  body /deep/ .uk-push-5-6 {
+    left: 83.333%;
+  }
+  /* Tenths */
+  body /deep/ .uk-push-1-10 {
+    left: 10%;
+  }
+  body /deep/ .uk-push-3-10 {
+    left: 30%;
+  }
+  body /deep/ .uk-push-7-10 {
+    left: 70%;
+  }
+  body /deep/ .uk-push-9-10 {
+    left: 90%;
+  }
+  /*
+     * Pull
+     */
+  /* Halves */
+  body /deep/ .uk-pull-1-2,
+  body /deep/ .uk-pull-2-4,
+  body /deep/ .uk-pull-3-6,
+  body /deep/ .uk-pull-5-10 {
+    left: -50%;
+  }
+  /* Thirds */
+  body /deep/ .uk-pull-1-3,
+  body /deep/ .uk-pull-2-6 {
+    left: -33.333%;
+  }
+  body /deep/ .uk-pull-2-3,
+  body /deep/ .uk-pull-4-6 {
+    left: -66.666%;
+  }
+  /* Quarters */
+  body /deep/ .uk-pull-1-4 {
+    left: -25%;
+  }
+  body /deep/ .uk-pull-3-4 {
+    left: -75%;
+  }
+  /* Fifths */
+  body /deep/ .uk-pull-1-5,
+  body /deep/ .uk-pull-2-10 {
+    left: -20%;
+  }
+  body /deep/ .uk-pull-2-5,
+  body /deep/ .uk-pull-4-10 {
+    left: -40%;
+  }
+  body /deep/ .uk-pull-3-5,
+  body /deep/ .uk-pull-6-10 {
+    left: -60%;
+  }
+  body /deep/ .uk-pull-4-5,
+  body /deep/ .uk-pull-8-10 {
+    left: -80%;
+  }
+  /* Sixths */
+  body /deep/ .uk-pull-1-6 {
+    left: -16.666%;
+  }
+  body /deep/ .uk-pull-5-6 {
+    left: -83.333%;
+  }
+  /* Tenths */
+  body /deep/ .uk-pull-1-10 {
+    left: -10%;
+  }
+  body /deep/ .uk-pull-3-10 {
+    left: -30%;
+  }
+  body /deep/ .uk-pull-7-10 {
+    left: -70%;
+  }
+  body /deep/ .uk-pull-9-10 {
+    left: -90%;
+  }
+}
+/* ========================================================================
+   Component: Panel
+ ========================================================================== */
+/*
+ * 1. Needed for `a` elements
+ * 2. Create position context for badges
+ */
+body /deep/ .uk-panel {
+  /* 1 */
+  display: block;
+  /* 2 */
+  position: relative;
+}
+/*
+ * Allow panels to be anchors
+ */
+body /deep/ .uk-panel,
+body /deep/ a.uk-panel:hover {
+  color: inherit;
+  text-decoration: none;
+}
+/*
+ * Micro clearfix to make panels more robust
+ */
+body /deep/ .uk-panel:before,
+body /deep/ .uk-panel:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-panel:after {
+  clear: both;
+}
+/*
+ * Remove margin from the last-child if not `uk-widget-title`
+ */
+body /deep/ .uk-panel > :not(.uk-panel-title):last-child {
+  margin-bottom: 0;
+}
+/* Sub-object: `uk-panel-title`
+ ========================================================================== */
+body /deep/ .uk-panel-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: none;
+  color: #444444;
+}
+/* Sub-object: `uk-panel-badge`
+ ========================================================================== */
+body /deep/ .uk-panel-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+/* Modifier: `uk-panel-box`
+ ========================================================================== */
+body /deep/ .uk-panel-box {
+  padding: 15px;
+  background: #fafafa;
+  color: #444444;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+body /deep/ a.uk-panel-box:hover {
+  color: #444444;
+}
+body /deep/ .uk-panel-box .uk-panel-title {
+  color: #444444;
+}
+body /deep/ .uk-panel-box .uk-panel-badge {
+  top: 10px;
+  right: 10px;
+}
+body /deep/ .uk-panel-box .uk-panel-teaser {
+  margin: -16px -16px 15px -16px;
+}
+/*
+ * Nav in panel
+ */
+body /deep/ .uk-panel-box > .uk-nav-side {
+  margin: 0 -15px;
+}
+/*
+ * Sub-modifier: `uk-panel-box-primary`
+ */
+body /deep/ .uk-panel-box-primary {
+  background-color: #ebf7fd;
+  color: #2d7091;
+  body /deep/ border-color: rgba(45, 112, 145, 0.3);
+}
+body /deep/ a.uk-panel-box-primary:hover {
+  color: #2d7091;
+}
+body /deep/ .uk-panel-box-primary .uk-panel-title {
+  color: #2d7091;
+}
+/*
+ * Sub-modifier: `uk-panel-box-secondary`
+ */
+body /deep/ .uk-panel-box-secondary {
+  background-color: #ffffff;
+  color: #444444;
+}
+body /deep/ a.uk-panel-box-secondary:hover {
+  color: #444444;
+}
+body /deep/ .uk-panel-box-secondary .uk-panel-title {
+  color: #444444;
+}
+/* Modifier: `uk-panel-hover`
+ ========================================================================== */
+body /deep/ .uk-panel-hover {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+body /deep/ .uk-panel-hover:hover {
+  background: #fafafa;
+  color: #444444;
+  border-color: #dddddd;
+}
+body /deep/ .uk-panel-hover .uk-panel-badge {
+  top: 10px;
+  right: 10px;
+}
+body /deep/ .uk-panel-hover .uk-panel-teaser {
+  margin: -16px -16px 15px -16px;
+}
+/* Modifier: `uk-panel-header`
+ ========================================================================== */
+body /deep/ .uk-panel-header .uk-panel-title {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dddddd;
+  color: #444444;
+}
+/* Modifier: `uk-panel-space`
+ ========================================================================== */
+body /deep/ .uk-panel-space {
+  padding: 30px;
+}
+body /deep/ .uk-panel-space .uk-panel-badge {
+  top: 30px;
+  right: 30px;
+}
+/* Modifier: `uk-panel-divider`
+ ========================================================================== */
+body /deep/ .uk-panel + .uk-panel-divider {
+  margin-top: 50px !important;
+}
+body /deep/ .uk-panel + .uk-panel-divider:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -25px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #dddddd;
+}
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  body /deep/ .uk-panel + .uk-panel-divider {
+    margin-top: 70px !important;
+  }
+  body /deep/ .uk-panel + .uk-panel-divider:before {
+    top: -35px;
+  }
+}
+body /deep/ .uk-panel-box .uk-panel-teaser {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+}
+/* ========================================================================
+   Component: Article
+ ========================================================================== */
+/*
+ * Micro clearfix to make articles more robust
+ */
+body /deep/ .uk-article:before,
+body /deep/ .uk-article:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-article:after {
+  clear: both;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-article > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Vertical gutter for articles
+ */
+body /deep/ .uk-article + .uk-article {
+  margin-top: 25px;
+}
+/* Sub-object `uk-article-title`
+ ========================================================================== */
+body /deep/ .uk-article-title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: normal;
+  text-transform: none;
+}
+body /deep/ .uk-article-title a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Sub-object `uk-article-meta`
+ ========================================================================== */
+body /deep/ .uk-article-meta {
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
+}
+/* Sub-object `uk-article-lead`
+ ========================================================================== */
+body /deep/ .uk-article-lead {
+  color: #444444;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+/* Sub-object `uk-article-divider`
+ ========================================================================== */
+body /deep/ .uk-article-divider {
+  margin-bottom: 25px;
+  border-color: #dddddd;
+}
+body /deep/ * + .uk-article-divider {
+  margin-top: 25px;
+}
+body /deep/ .uk-article + .uk-article {
+  padding-top: 25px;
+  border-top: 1px solid #dddddd;
+}
+/* ========================================================================
+   Component: Comment
+ ========================================================================== */
+/* Sub-object `uk-comment-header`
+ ========================================================================== */
+body /deep/ .uk-comment-header {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #fafafa;
+}
+/*
+ * Micro clearfix
+ */
+body /deep/ .uk-comment-header:before,
+body /deep/ .uk-comment-header:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-comment-header:after {
+  clear: both;
+}
+/* Sub-object `uk-comment-avatar`
+ ========================================================================== */
+body /deep/ .uk-comment-avatar {
+  margin-right: 15px;
+  float: left;
+}
+/* Sub-object `uk-comment-title`
+ ========================================================================== */
+body /deep/ .uk-comment-title {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+/* Sub-object `uk-comment-meta`
+ ========================================================================== */
+body /deep/ .uk-comment-meta {
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #999999;
+}
+/* Sub-object `uk-comment-body`
+ ========================================================================== */
+body /deep/ .uk-comment-body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-comment-body > :last-child {
+  margin-bottom: 0;
+}
+/* Sub-object `uk-comment-list`
+ ========================================================================== */
+body /deep/ .uk-comment-list {
+  padding: 0;
+  list-style: none;
+}
+body /deep/ .uk-comment-list .uk-comment + ul {
+  margin: 25px 0 0 0;
+  list-style: none;
+}
+body /deep/ .uk-comment-list > li:nth-child(n+2),
+body /deep/ .uk-comment-list .uk-comment + ul > li:nth-child(n+2) {
+  margin-top: 25px;
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-comment-list .uk-comment + ul {
+    padding-left: 100px;
+  }
+}
+/* Modifier `uk-comment-primary`
+ ========================================================================== */
+body /deep/ .uk-comment-primary .uk-comment-header {
+  body /deep/ border-color: rgba(45, 112, 145, 0.3);
+  background-color: #ebf7fd;
+  color: #2d7091;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/* ========================================================================
+   Component: Nav
+ ========================================================================== */
+body /deep/ .uk-nav,
+body /deep/ .uk-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Items
+ */
+body /deep/ .uk-nav li > a {
+  display: block;
+  text-decoration: none;
+}
+body /deep/ .uk-nav > li > a {
+  padding: 5px 15px;
+}
+/*
+ * Nested items
+ */
+body /deep/ .uk-nav ul {
+  padding-left: 15px;
+}
+body /deep/ .uk-nav ul a {
+  padding: 2px 0;
+}
+/*
+ * Item subtitle
+ */
+body /deep/ .uk-nav li > a > div {
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Sub-object: `uk-nav-header`
+ ========================================================================== */
+body /deep/ .uk-nav-header {
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+body /deep/ .uk-nav-header:not(:first-child) {
+  margin-top: 15px;
+}
+/* Sub-object: `uk-nav-divider`
+ ========================================================================== */
+body /deep/ .uk-nav-divider {
+  margin: 9px 15px;
+}
+/* Sub-object: `uk-nav-sub`
+ ========================================================================== */
+/*
+ * `ul` needed for higher specificity to override padding
+ */
+body /deep/ ul.uk-nav-sub {
+  padding: 5px 0 5px 15px;
+}
+/* Modifier: `uk-nav-parent-icon`
+ ========================================================================== */
+body /deep/ .uk-nav-parent-icon > .uk-parent > a:after {
+  content: "\f104";
+  width: 20px;
+  margin-right: -10px;
+  float: right;
+  font-family: FontAwesome;
+  text-align: center;
+}
+body /deep/ .uk-nav-parent-icon > .uk-parent.uk-open > a:after {
+  content: "\f107";
+}
+/* Modifier `uk-nav-side`
+ ========================================================================== */
+/*
+ * Items
+ */
+body /deep/ .uk-nav-side > li > a {
+  color: #444444;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-nav-side > li > a:hover,
+body /deep/ .uk-nav-side > li > a:focus {
+  background: rgba(0, 0, 0, 0.03);
+  color: #444444;
+  /* 2 */
+  outline: none;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.06);
+  text-shadow: 0 -1px 0 #ffffff;
+}
+/* Active */
+body /deep/ .uk-nav-side > li.uk-active > a {
+  background: #00a8e6;
+  color: #ffffff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Sub-object: `uk-nav-header`
+ */
+body /deep/ .uk-nav-side .uk-nav-header {
+  color: #444444;
+}
+/*
+ * Sub-object: `uk-nav-divider`
+ */
+body /deep/ .uk-nav-side .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+  box-shadow: 0 1px 0 #ffffff;
+}
+/*
+ * Nested items
+ */
+body /deep/ .uk-nav-side ul a {
+  color: #0077dd;
+}
+body /deep/ .uk-nav-side ul a:hover {
+  color: #005599;
+}
+/* Modifier `uk-nav-dropdown`
+ ========================================================================== */
+/*
+ * Items
+ */
+body /deep/ .uk-nav-dropdown > li > a {
+  color: #444444;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-nav-dropdown > li > a:hover,
+body /deep/ .uk-nav-dropdown > li > a:focus {
+  background: #00a8e6;
+  color: #ffffff;
+  /* 2 */
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Sub-object: `uk-nav-header`
+ */
+body /deep/ .uk-nav-dropdown .uk-nav-header {
+  color: #999999;
+}
+/*
+ * Sub-object: `uk-nav-divider`
+ */
+body /deep/ .uk-nav-dropdown .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+}
+/*
+ * Nested items
+ */
+body /deep/ .uk-nav-dropdown ul a {
+  color: #0077dd;
+}
+body /deep/ .uk-nav-dropdown ul a:hover {
+  color: #005599;
+}
+/* Modifier `uk-nav-navbar`
+ ========================================================================== */
+/*
+ * Items
+ */
+body /deep/ .uk-nav-navbar > li > a {
+  color: #444444;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-nav-navbar > li > a:hover,
+body /deep/ .uk-nav-navbar > li > a:focus {
+  background: #00a8e6;
+  color: #ffffff;
+  /* 2 */
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Sub-object: `uk-nav-header`
+ */
+body /deep/ .uk-nav-navbar .uk-nav-header {
+  color: #999999;
+}
+/*
+ * Sub-object: `uk-nav-divider`
+ */
+body /deep/ .uk-nav-navbar .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+}
+/*
+ * Nested items
+ */
+body /deep/ .uk-nav-navbar ul a {
+  color: #0077dd;
+}
+body /deep/ .uk-nav-navbar ul a:hover {
+  color: #005599;
+}
+/* Modifier `uk-nav-offcanvas`
+ ========================================================================== */
+/*
+ * Items
+ */
+body /deep/ .uk-nav-offcanvas > li > a {
+  color: #cccccc;
+  padding: 10px 15px;
+  body /deep/ border-top: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+/*
+ * Hover
+ * No hover on touch devices because it behaves buggy in fixed offcanvas
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-nav-offcanvas > .uk-open > a,
+body /deep/ html:not(.uk-touch) .uk-nav-offcanvas > li > a:hover,
+body /deep/ html:not(.uk-touch) .uk-nav-offcanvas > li > a:focus {
+  background: #404040;
+  color: #ffffff;
+  /* 2 */
+  outline: none;
+}
+/*
+ * Active
+ * `html .uk-nav` needed for higher specificity to override hover
+ */
+body /deep/ html .uk-nav.uk-nav-offcanvas > li.uk-active > a {
+  background: #1a1a1a;
+  color: #ffffff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+/*
+ * Sub-object: `uk-nav-header`
+ */
+body /deep/ .uk-nav-offcanvas .uk-nav-header {
+  color: #777777;
+  margin-top: 0;
+  body /deep/ border-top: 1px solid rgba(0, 0, 0, 0.3);
+  background: #404040;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+/*
+ * Sub-object: `uk-nav-divider`
+ */
+body /deep/ .uk-nav-offcanvas .uk-nav-divider {
+  body /deep/ border-top: 1px solid rgba(255, 255, 255, 0.01);
+  margin: 0;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+/*
+ * Nested items
+ * No hover on touch devices because it behaves buggy in fixed offcanvas
+ */
+body /deep/ .uk-nav-offcanvas ul a {
+  color: #cccccc;
+}
+body /deep/ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
+  color: #ffffff;
+}
+/*
+     * Modifier `uk-nav-offcanvas`
+     */
+body /deep/ .uk-nav-offcanvas {
+  body /deep/ border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+/*
+     * Sub-object: `uk-nav-sub`
+     */
+body /deep/ .uk-nav-offcanvas .uk-nav-sub {
+  body /deep/ border-top: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+/* ========================================================================
+   Component: Navbar
+ ========================================================================== */
+body /deep/ .uk-navbar {
+  background: #f5f5f5;
+  color: #444444;
+  body /deep/ border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+/*
+ * Micro clearfix
+ */
+body /deep/ .uk-navbar:before,
+body /deep/ .uk-navbar:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-navbar:after {
+  clear: both;
+}
+/* Sub-object: `uk-navbar-nav`
+ ========================================================================== */
+body /deep/ .uk-navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+/*
+ * 1. Create position context for dropdowns
+ */
+body /deep/ .uk-navbar-nav > li {
+  float: left;
+  /* 1 */
+  position: relative;
+}
+/*
+ * 1. Dimensions
+ * 2. Style
+ */
+body /deep/ .uk-navbar-nav > li > a {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* 1 */
+  height: 41px;
+  padding: 0 15px;
+  line-height: 40px;
+  /* 2 */
+  color: #444444;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  border-bottom-width: 0;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/* Appear not as link */
+body /deep/ .uk-navbar-nav > li > a[href='#'] {
+  cursor: text;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Also apply if dropdown is opened
+ * 3. Remove default focus style
+ */
+body /deep/ .uk-navbar-nav > li:hover > a,
+body /deep/ .uk-navbar-nav > li > a:focus,
+body /deep/ .uk-navbar-nav > li.uk-open > a {
+  background-color: #fafafa;
+  color: #444444;
+  /* 3 */
+  outline: none;
+  position: relative;
+  z-index: 1;
+  body /deep/ border-left-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-right-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-top-color: rgba(0, 0, 0, 0.1);
+}
+/* OnClick */
+body /deep/ .uk-navbar-nav > li > a:active {
+  background-color: #eeeeee;
+  color: #444444;
+  body /deep/ border-left-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-right-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-top-color: rgba(0, 0, 0, 0.2);
+}
+/* Active */
+body /deep/ .uk-navbar-nav > li.uk-active > a {
+  background-color: #fafafa;
+  color: #444444;
+  body /deep/ border-left-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-right-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-top-color: rgba(0, 0, 0, 0.1);
+}
+/* Sub-objects: `uk-navbar-nav-subtitle`
+ ========================================================================== */
+body /deep/ .uk-navbar-nav .uk-navbar-nav-subtitle {
+  line-height: 28px;
+}
+body /deep/ .uk-navbar-nav-subtitle > div {
+  margin-top: -6px;
+  font-size: 10px;
+  line-height: 12px;
+}
+body /deep/ /* Sub-objects: `uk-navbar-content`, `uk-navbar-brand`, `uk-navbar-toggle`
+ ========================================================================== */
+/*
+ * Imitate navbar items
+ */
+body /deep/ .uk-navbar-content,
+body /deep/ .uk-navbar-brand,
+body /deep/ .uk-navbar-toggle {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  height: 41px;
+  padding: 0 15px;
+  float: left;
+  margin-top: -1px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/*
+ * Helper to center all child elements vertically
+ */
+body /deep/ .uk-navbar-content:before,
+body /deep/ .uk-navbar-brand:before,
+body /deep/ .uk-navbar-toggle:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* Sub-objects: `uk-navbar-content`
+ ========================================================================== */
+/*
+ * Better sibling spacing
+ */
+body /deep/ .uk-navbar-content + .uk-navbar-content:not(.uk-navbar-center) {
+  padding-left: 0;
+}
+/*
+ * Link colors
+ */
+body /deep/ .uk-navbar-content > a:not([class]) {
+  color: #0077dd;
+}
+body /deep/ .uk-navbar-content > a:not([class]):hover {
+  color: #005599;
+}
+/* Sub-objects: `uk-navbar-brand`
+ ========================================================================== */
+body /deep/ .uk-navbar-brand {
+  font-size: 18px;
+  color: #444444;
+  text-decoration: none;
+}
+/*
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-navbar-brand:hover,
+body /deep/ .uk-navbar-brand:focus {
+  color: #444444;
+  text-decoration: none;
+  /* 2 */
+  outline: none;
+}
+/* Sub-object: `uk-navbar-toggle`
+ ========================================================================== */
+body /deep/ .uk-navbar-toggle {
+  font-size: 18px;
+  color: #444444;
+  text-decoration: none;
+}
+/*
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-navbar-toggle:hover,
+body /deep/ .uk-navbar-toggle:focus {
+  color: #444444;
+  text-decoration: none;
+  /* 2 */
+  outline: none;
+}
+/*
+ * 1. Center icon vertically
+ */
+body /deep/ .uk-navbar-toggle:after {
+  content: "\f0c9";
+  font-family: FontAwesome;
+  /* 1 */
+  vertical-align: middle;
+}
+body /deep/ .uk-navbar-toggle-alt:after {
+  content: "\f002";
+}
+/* Sub-object: `uk-navbar-center`
+ ========================================================================== */
+/*
+ * The element with this class needs to be last child in the navbar
+ * 1. This hack is needed because other float elements shift centered text
+ */
+body /deep/ .uk-navbar-center {
+  float: none;
+  text-align: center;
+  /* 1 */
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Sub-object: `uk-navbar-flip`
+ ========================================================================== */
+body /deep/ .uk-navbar-flip {
+  float: right;
+}
+/*
+     * Apply same `border-radius` as `uk-navbar`
+     */
+body /deep/ .uk-navbar-nav:first-child > li:first-child > a {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/*
+     * Sub-modifier `uk-navbar-flip`
+     */
+/* Collapse border */
+body /deep/ .uk-navbar-flip .uk-navbar-nav > li > a {
+  margin-left: 0;
+  margin-right: -1px;
+}
+/* Apply same `border-radius` as `uk-navbar` */
+body /deep/ .uk-navbar-flip .uk-navbar-nav:first-child > li:first-child > a {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body /deep/ .uk-navbar-flip .uk-navbar-nav:last-child > li:last-child > a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/*
+     * Sub-modifier `uk-navbar-attached`
+     */
+body /deep/ .uk-navbar-attached {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-radius: 0;
+}
+body /deep/ .uk-navbar-attached .uk-navbar-nav > li > a {
+  border-radius: 0 !important;
+}
+/* ========================================================================
+   Component: Subnav
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+body /deep/ .uk-subnav {
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  font-size: 0.001px;
+}
+/* Items
+ ========================================================================== */
+/*
+ * 1. Create position context for dropdowns
+ * 2. Reset whitespace hack
+ */
+body /deep/ .uk-subnav > li {
+  /* 1 */
+  position: relative;
+  /* 2 */
+  font-size: 1rem;
+  vertical-align: top;
+}
+body /deep/ .uk-subnav > li,
+body /deep/ .uk-subnav > li > a,
+body /deep/ .uk-subnav > li > span {
+  display: inline-block;
+}
+body /deep/ .uk-subnav > li:nth-child(n+2) {
+  margin-left: 10px;
+}
+/*
+ * Items
+ */
+body /deep/ .uk-subnav > li > a {
+  color: #0077dd;
+}
+body /deep/ .uk-subnav > li > a:hover {
+  color: #005599;
+}
+/*
+ * Active
+ */
+/*
+ * Disabled
+ */
+body /deep/ .uk-subnav > li > span {
+  color: #999999;
+}
+/* Modifier: 'subnav-line'
+ ========================================================================== */
+body /deep/ .uk-subnav-line > li:nth-child(n+2):before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  margin-right: 10px;
+  border-left: 1px solid #dddddd;
+}
+/* Modifier: 'subnav-pill'
+ ========================================================================== */
+body /deep/ .uk-subnav-pill > li > a,
+body /deep/ .uk-subnav-pill > li > span {
+  padding: 3px 9px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-subnav-pill > li > a:hover,
+body /deep/ .uk-subnav-pill > li > a:focus {
+  background: #fafafa;
+  color: #444444;
+  /* 2 */
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+/*
+ * Active
+ * `li` needed for higher specificity to override hover
+ */
+body /deep/ .uk-subnav-pill > li.uk-active > a {
+  background: #00a8e6;
+  color: #ffffff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+}
+/* ========================================================================
+   Component: Breadcrumb
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+body /deep/ .uk-breadcrumb {
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  font-size: 0.001px;
+}
+/* Items
+ ========================================================================== */
+/*
+ * Reset whitespace hack
+ */
+body /deep/ .uk-breadcrumb > li {
+  font-size: 1rem;
+  vertical-align: top;
+}
+body /deep/ .uk-breadcrumb > li,
+body /deep/ .uk-breadcrumb > li > a,
+body /deep/ .uk-breadcrumb > li > span {
+  display: inline-block;
+}
+body /deep/ .uk-breadcrumb > li:nth-child(n+2):before {
+  content: "/";
+  display: inline-block;
+  margin: 0 8px;
+}
+/*
+ * Disabled
+ */
+body /deep/ .uk-breadcrumb > li:not(.uk-active) > span {
+  color: #999999;
+}
+/* ========================================================================
+   Component: Pagination
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Center pagination by default
+ * 3. Remove whitespace between child elements when using `inline-block`
+ */
+body /deep/ .uk-pagination {
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  text-align: center;
+  /* 3 */
+  font-size: 0.001px;
+}
+/*
+ * Micro clearfix
+ * Needed if `uk-pagination-previous` or `uk-pagination-next` sub-objects are used
+ */
+body /deep/ .uk-pagination:before,
+body /deep/ .uk-pagination:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-pagination:after {
+  clear: both;
+}
+/* Items
+ ========================================================================== */
+/*
+ * 1. Reset whitespace hack
+ * 2. Remove the gap at the bottom of it container
+ */
+body /deep/ .uk-pagination > li {
+  display: inline-block;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */
+  vertical-align: top;
+}
+body /deep/ .uk-pagination > li:nth-child(n+2) {
+  margin-left: 5px;
+}
+/*
+ * 1. Makes pagination more robust against different box-sizing use
+ * 2. Reset text-align to center if alignment modifier is used
+ */
+body /deep/ .uk-pagination > li > a,
+body /deep/ .uk-pagination > li > span {
+  display: inline-block;
+  min-width: 16px;
+  padding: 3px 5px;
+  line-height: 20px;
+  text-decoration: none;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  /* 2 */
+  text-align: center;
+  body /deep/ border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+/*
+ * Links
+ */
+body /deep/ .uk-pagination > li > a {
+  background: #f5f5f5;
+  color: #444444;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-pagination > li > a:hover,
+body /deep/ .uk-pagination > li > a:focus {
+  background-color: #fafafa;
+  color: #444444;
+  /* 2 */
+  outline: none;
+  body /deep/ border-color: rgba(0, 0, 0, 0.16);
+}
+/* OnClick */
+body /deep/ .uk-pagination > li > a:active {
+  background-color: #eeeeee;
+  color: #444444;
+}
+/*
+ * Active
+ */
+body /deep/ .uk-pagination > .uk-active > span {
+  background: #00a8e6;
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Disabled
+ */
+body /deep/ .uk-pagination > .uk-disabled > span {
+  background-color: #fafafa;
+  color: #999999;
+  body /deep/ border: 1px solid rgba(0, 0, 0, 0.06);
+  text-shadow: 0 1px 0 #ffffff;
+}
+/* Previous and next navigation
+ ========================================================================== */
+body /deep/ .uk-pagination-previous {
+  float: left;
+}
+body /deep/ .uk-pagination-next {
+  float: right;
+}
+/* Alignment modifiers
+ ========================================================================== */
+body /deep/ .uk-pagination-left {
+  text-align: left;
+}
+body /deep/ .uk-pagination-right {
+  text-align: right;
+}
+/* ========================================================================
+   Component: Tab
+ ========================================================================== */
+body /deep/ .uk-tab {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #dddddd;
+}
+/*
+ * Micro clearfix on the deepest container
+ */
+body /deep/ .uk-tab:before,
+body /deep/ .uk-tab:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-tab:after {
+  clear: both;
+}
+/*
+ * Items
+ * 1. Create position context for dropdowns
+ */
+body /deep/ .uk-tab > li {
+  margin-bottom: -1px;
+  float: left;
+  /* 1 */
+  position: relative;
+}
+body /deep/ .uk-tab > li > a {
+  display: block;
+  padding: 8px 12px 8px 12px;
+  border: 1px solid transparent;
+  border-bottom-width: 0;
+  color: #0077dd;
+  text-decoration: none;
+  border-radius: 4px 4px 0 0;
+  text-shadow: 0 1px 0 #ffffff;
+}
+body /deep/ .uk-tab > li:nth-child(n+2) > a {
+  margin-left: 5px;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Also apply if dropdown is opened
+ * 3. Remove default focus style
+ */
+body /deep/ .uk-tab > li > a:hover,
+body /deep/ .uk-tab > li > a:focus,
+body /deep/ .uk-tab > li.uk-open > a {
+  body /deep/ border-color: rgba(0, 0, 0, 0.06);
+  background: #f5f5f5;
+  color: #005599;
+  /* 2 */
+  outline: none;
+}
+body /deep/ .uk-tab > li:not(.uk-active) > a:hover,
+body /deep/ .uk-tab > li:not(.uk-active) > a:focus,
+body /deep/ .uk-tab > li.uk-open:not(.uk-active) > a {
+  margin-bottom: 1px;
+  padding-bottom: 7px;
+}
+/* Active */
+body /deep/ .uk-tab > li.uk-active > a {
+  border-color: #dddddd;
+  border-bottom-color: transparent;
+  background: #ffffff;
+  color: #444444;
+}
+/* Disabled */
+body /deep/ .uk-tab > li.uk-disabled > a {
+  color: #999999;
+  cursor: auto;
+}
+body /deep/ .uk-tab > li.uk-disabled > a:hover,
+body /deep/ .uk-tab > li.uk-disabled > a:focus,
+body /deep/ .uk-tab > li.uk-disabled.uk-active > a {
+  background: none;
+  border-color: transparent;
+}
+/* Modifier: 'tab-flip'
+ ========================================================================== */
+body /deep/ .uk-tab-flip > li {
+  float: right;
+}
+body /deep/ .uk-tab-flip > li:nth-child(n+2) > a {
+  margin-left: 0;
+  margin-right: 5px;
+}
+/* Modifier: 'tab-responsive'
+ ========================================================================== */
+body /deep/ .uk-tab > li.uk-tab-responsive > a {
+  margin-left: 0;
+  margin-right: 0;
+}
+/*
+ * Icon
+ */
+body /deep/ .uk-tab-responsive > a:before {
+  content: "\f0c9\00a0";
+  font-family: FontAwesome;
+}
+/* Modifier: 'tab-center'
+ ========================================================================== */
+body /deep/ .uk-tab-center {
+  border-bottom: 1px solid #dddddd;
+}
+body /deep/ .uk-tab-center-bottom {
+  border-bottom: none;
+  border-top: 1px solid #dddddd;
+}
+body /deep/ .uk-tab-center:before,
+body /deep/ .uk-tab-center:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-tab-center:after {
+  clear: both;
+}
+/*
+ * 1. Using `right` to prevent vertical scrollbar caused by centering if to many tabs
+ */
+body /deep/ .uk-tab-center .uk-tab {
+  position: relative;
+  right: 50%;
+  border: none;
+  float: right;
+}
+body /deep/ .uk-tab-center .uk-tab > li {
+  position: relative;
+  right: -50%;
+}
+body /deep/ .uk-tab-center .uk-tab > li > a {
+  text-align: center;
+}
+/* Modifier: 'tab-bottom'
+ ========================================================================== */
+body /deep/ .uk-tab-bottom {
+  border-top: 1px solid #dddddd;
+  border-bottom: none;
+}
+body /deep/ .uk-tab-bottom > li {
+  margin-top: -1px;
+  margin-bottom: 0;
+}
+body /deep/ .uk-tab-bottom > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom-width: 1px;
+  border-top-width: 0;
+}
+body /deep/ .uk-tab-bottom > li:not(.uk-active) > a:hover,
+body /deep/ .uk-tab-bottom > li:not(.uk-active) > a:focus,
+body /deep/ .uk-tab-bottom > li.uk-open:not(.uk-active) > a {
+  margin-bottom: 0;
+  margin-top: 1px;
+  padding-bottom: 8px;
+  padding-top: 7px;
+}
+body /deep/ .uk-tab-bottom > li.uk-active > a {
+  border-top-color: transparent;
+  border-bottom-color: #dddddd;
+}
+/* Modifier: 'tab-grid'
+ ========================================================================== */
+/*
+ * 1. Create position context to prevent hidden border because of negative `z-index`
+ */
+body /deep/ .uk-tab-grid {
+  margin-left: -5px;
+  border-bottom: none;
+  /* 1 */
+  position: relative;
+  z-index: 0;
+}
+body /deep/ .uk-tab-grid:before {
+  display: block;
+  position: absolute;
+  left: 5px;
+  right: 0;
+  bottom: -1px;
+  border-top: 1px solid #dddddd;
+  /* 1 */
+  z-index: -1;
+}
+body /deep/ .uk-tab-grid > li:first-child > a {
+  margin-left: 5px;
+}
+body /deep/ .uk-tab-grid > li > a {
+  text-align: center;
+}
+/*
+ * If `uk-tab-bottom`
+ */
+body /deep/ .uk-tab-grid.uk-tab-bottom {
+  border-top: none;
+}
+body /deep/ .uk-tab-grid.uk-tab-bottom:before {
+  top: -1px;
+  bottom: auto;
+}
+body /deep/ /* Modifier: 'tab-left', 'tab-right'
+ ========================================================================== */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-tab-left,
+  body /deep/ .uk-tab-right {
+    border-bottom: none;
+  }
+  body /deep/ .uk-tab-left > li,
+  body /deep/ .uk-tab-right > li {
+    margin-bottom: 0;
+    float: none;
+  }
+  body /deep/ .uk-tab-left > li > a,
+  body /deep/ .uk-tab-right > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  body /deep/ .uk-tab-left > li:nth-child(n+2) > a,
+  body /deep/ .uk-tab-right > li:nth-child(n+2) > a {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+  body /deep/ .uk-tab-left > li.uk-active > a,
+  body /deep/ .uk-tab-right > li.uk-active > a {
+    border-color: #dddddd;
+  }
+  /*
+     * Modifier: 'tab-left'
+     */
+  body /deep/ .uk-tab-left {
+    border-right: 1px solid #dddddd;
+  }
+  body /deep/ .uk-tab-left > li {
+    margin-right: -1px;
+  }
+  body /deep/ .uk-tab-left > li > a {
+    border-bottom-width: 1px;
+    border-right-width: 0;
+  }
+  body /deep/ .uk-tab-left > li:not(.uk-active) > a:hover,
+  body /deep/ .uk-tab-left > li:not(.uk-active) > a:focus {
+    margin-bottom: 0;
+    margin-right: 1px;
+    padding-bottom: 8px;
+    padding-right: 11px;
+  }
+  body /deep/ .uk-tab-left > li.uk-active > a {
+    border-right-color: transparent;
+  }
+  /*
+     * Modifier: 'tab-right'
+     */
+  body /deep/ .uk-tab-right {
+    border-left: 1px solid #dddddd;
+  }
+  body /deep/ .uk-tab-right > li {
+    margin-left: -1px;
+  }
+  body /deep/ .uk-tab-right > li > a {
+    border-bottom-width: 1px;
+    border-left-width: 0;
+  }
+  body /deep/ .uk-tab-right > li:not(.uk-active) > a:hover,
+  body /deep/ .uk-tab-right > li:not(.uk-active) > a:focus {
+    margin-bottom: 0;
+    margin-left: 1px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+  }
+  body /deep/ .uk-tab-right > li.uk-active > a {
+    border-left-color: transparent;
+  }
+}
+/* Modifier: `uk-tab-bottom'
+     ========================================================================== */
+body /deep/ .uk-tab-bottom > li > a {
+  border-radius: 0 0 4px 4px;
+}
+body /deep/ /* Modifier: `uk-tab-left', `uk-tab-right'
+    ========================================================================== */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  /*
+         * Modifier: `uk-tab-left'
+         */
+  body /deep/ .uk-tab-left > li > a {
+    border-radius: 4px 0 0 4px;
+  }
+  /*
+         * Modifier: `uk-tab-right'
+         */
+  body /deep/ .uk-tab-right > li > a {
+    border-radius: 0 4px 4px 0;
+  }
+}
+/* ========================================================================
+   Component: List
+ ========================================================================== */
+body /deep/ .uk-list {
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Micro clearfix to make list more robust
+ */
+body /deep/ .uk-list > li:before,
+body /deep/ .uk-list > li:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-list > li:after {
+  clear: both;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-list > li > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Nested lists
+ */
+body /deep/ .uk-list ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+/* Modifier: `uk-list-line`
+ ========================================================================== */
+body /deep/ .uk-list-line > li:nth-child(n+2) {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+}
+/* Modifier: `uk-list-striped`
+ ========================================================================== */
+body /deep/ .uk-list-striped > li {
+  padding: 5px 5px;
+  border-bottom: 1px solid #dddddd;
+}
+body /deep/ .uk-list-striped > li:nth-of-type(odd) {
+  background: #fafafa;
+}
+/* Modifier: `uk-list-space`
+ ========================================================================== */
+body /deep/ .uk-list-space > li:nth-child(n+2) {
+  margin-top: 10px;
+}
+body /deep/ .uk-list-striped > li:first-child {
+  border-top: 1px solid #dddddd;
+}
+/* ========================================================================
+   Component: Description list
+ ========================================================================== */
+/* Modifier: `uk-description-list-horizontal`
+ ========================================================================== */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-description-list-horizontal {
+    overflow: hidden;
+  }
+  body /deep/ .uk-description-list-horizontal > dt {
+    width: 160px;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  body /deep/ .uk-description-list-horizontal > dd {
+    margin-left: 180px;
+  }
+}
+/* Modifier: `uk-description-list-line`
+ ========================================================================== */
+body /deep/ .uk-description-list-line > dt {
+  font-weight: normal;
+}
+body /deep/ .uk-description-list-line > dt:nth-child(n+2) {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+}
+body /deep/ .uk-description-list-line > dd {
+  color: #999999;
+}
+/* ========================================================================
+   Component: Table
+ ========================================================================== */
+/*
+ * 1. Remove most spacing between table cells.
+ * 2. Block element behavior
+ * 3. Style
+ */
+body /deep/ .uk-table {
+  /* 1 */
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* 2 */
+  width: 100%;
+  /* 3 */
+  margin-bottom: 15px;
+}
+/*
+ * Add margin if adjacent element
+ */
+body /deep/ * + .uk-table {
+  margin-top: 15px;
+}
+body /deep/ .uk-table th,
+body /deep/ .uk-table td {
+  padding: 8px 8px;
+  border-bottom: 1px solid #dddddd;
+}
+/*
+ * Set alignment
+ */
+body /deep/ .uk-table th {
+  text-align: left;
+}
+body /deep/ .uk-table td {
+  vertical-align: top;
+}
+body /deep/ .uk-table thead th {
+  vertical-align: bottom;
+}
+/*
+ * Caption and footer
+ */
+body /deep/ .uk-table caption,
+body /deep/ .uk-table tfoot {
+  font-size: 12px;
+  font-style: italic;
+}
+body /deep/ .uk-table caption {
+  text-align: left;
+  color: #999999;
+}
+/* Sub-modifier: `uk-table-middle`
+ ========================================================================== */
+body /deep/ .uk-table-middle,
+body /deep/ .uk-table-middle td {
+  vertical-align: middle !important;
+}
+/* Modifier: `uk-table-striped`
+ ========================================================================== */
+body /deep/ .uk-table-striped tbody tr:nth-of-type(odd) {
+  background: #fafafa;
+}
+/* Modifier: `uk-table-condensed`
+ ========================================================================== */
+body /deep/ .uk-table-condensed td {
+  padding: 4px 8px;
+}
+/* Modifier: `uk-table-hover`
+ ========================================================================== */
+body /deep/ .uk-table-hover tbody tr:hover {
+  background: #f0f0f0;
+}
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+/*
+ * 1. Define consistent box sizing.
+ *    Default is `content-box` with following exceptions set to `border-box`
+ body /deep/ *    `button`, `select`, `input[type="checkbox"]` and `input[type="radio"]`
+ body /deep/ *    `input[type="search"]` in Chrome, Safari and Opera
+ *    `input[type="color"]` in Firefox
+ * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+ * 3. Remove `border-radius` in iOS.
+ * 4. Correct `font` properties and `color` not being inherited.
+ */
+body /deep/ .uk-form input,
+body /deep/ .uk-form select,
+body /deep/ .uk-form textarea {
+  /* 1 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border-radius: 0;
+  /* 4 */
+  font: inherit;
+  color: inherit;
+}
+/*
+ * Address inconsistent `text-transform` inheritance which is only inherit in Firefox
+ */
+body /deep/ .uk-form select {
+  text-transform: none;
+}
+/*
+ * 1. Correct `font` properties not being inherited.
+ * 2. Don't inherit the `font-weight` and use `bold` instead.
+ body /deep/ * NOTE: Both declarations don't work in Chrome, Safari and Opera.
+ */
+body /deep/ .uk-form optgroup {
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  font-weight: bold;
+}
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+body /deep/ .uk-form input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * Removes excess padding in IE 8/9/10.
+ */
+body /deep/ .uk-form input[type="checkbox"],
+body /deep/ .uk-form input[type="radio"] {
+  padding: 0;
+}
+/*
+ * Improves consistency of cursor style for clickable elements
+ */
+body /deep/ .uk-form input[type="checkbox"]:not(:disabled),
+body /deep/ .uk-form input[type="radio"]:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Remove default style in iOS.
+ */
+body /deep/ .uk-form textarea,
+body /deep/ .uk-form input:not([type]),
+body /deep/ .uk-form input[type="text"],
+body /deep/ .uk-form input[type="password"],
+body /deep/ .uk-form input[type="email"],
+body /deep/ .uk-form input[type="url"],
+body /deep/ .uk-form input[type="search"],
+body /deep/ .uk-form input[type="tel"],
+body /deep/ .uk-form input[type="number"],
+body /deep/ .uk-form input[type="datetime"] {
+  -webkit-appearance: none;
+}
+/*
+ body /deep/ * Remove inner padding and search cancel button in Chrome, Safari and Opera on OS X.
+ */
+body /deep/ .uk-form input[type="search"]::-webkit-search-cancel-button,
+body /deep/ .uk-form input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ body /deep/ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+body /deep/ .uk-form input[type="number"]::-webkit-inner-spin-button,
+body /deep/ .uk-form input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/*
+ body /deep/ * Define consistent border, margin, and padding.
+ */
+body /deep/ .uk-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * 1. Remove default vertical scrollbar in IE 8/9/10/11.
+ * 2. Improve readability and alignment in all browsers.
+ */
+body /deep/ .uk-form textarea {
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  vertical-align: top;
+}
+/*
+ * Removes placeholder transparency in Firefox.
+ */
+body /deep/ .uk-form ::-moz-placeholder {
+  opacity: 1;
+}
+/*
+ * Removes `box-shadow` for invalid controls in Firefox.
+ */
+body /deep/ .uk-form :invalid {
+  box-shadow: none;
+}
+/*
+ * Vertical alignment
+ */
+body /deep/ .uk-form input:not([type="radio"]):not([type="checkbox"]),
+body /deep/ .uk-form select {
+  vertical-align: middle;
+}
+/* Style
+ ========================================================================== */
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-form > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Controls
+ body /deep/ * Except for `range`, `radio`, `checkbox`, `file`, `submit`, `reset`, `button` and `image`
+ * 1. Must be `height` because `min-height` is not working in OSX
+ * 2. Responsiveness: Sets a maximum width relative to the parent to scale on narrower viewports
+ * 3. Vertical `padding` needed for `select` elements in Firefox
+ * 4. Style
+ */
+body /deep/ .uk-form select,
+body /deep/ .uk-form textarea,
+body /deep/ .uk-form input:not([type]),
+body /deep/ .uk-form input[type="text"],
+body /deep/ .uk-form input[type="password"],
+body /deep/ .uk-form input[type="datetime"],
+body /deep/ .uk-form input[type="datetime-local"],
+body /deep/ .uk-form input[type="date"],
+body /deep/ .uk-form input[type="month"],
+body /deep/ .uk-form input[type="time"],
+body /deep/ .uk-form input[type="week"],
+body /deep/ .uk-form input[type="number"],
+body /deep/ .uk-form input[type="email"],
+body /deep/ .uk-form input[type="url"],
+body /deep/ .uk-form input[type="search"],
+body /deep/ .uk-form input[type="tel"],
+body /deep/ .uk-form input[type="color"] {
+  /* 1 */
+  height: 30px;
+  /* 2 */
+  max-width: 100%;
+  /* 3 */
+  padding: 4px 6px;
+  /* 4 */
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  color: #444444;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  border-radius: 4px;
+}
+body /deep/ .uk-form select:focus,
+body /deep/ .uk-form textarea:focus,
+body /deep/ .uk-form input:not([type]):focus,
+body /deep/ .uk-form input[type="text"]:focus,
+body /deep/ .uk-form input[type="password"]:focus,
+body /deep/ .uk-form input[type="datetime"]:focus,
+body /deep/ .uk-form input[type="datetime-local"]:focus,
+body /deep/ .uk-form input[type="date"]:focus,
+body /deep/ .uk-form input[type="month"]:focus,
+body /deep/ .uk-form input[type="time"]:focus,
+body /deep/ .uk-form input[type="week"]:focus,
+body /deep/ .uk-form input[type="number"]:focus,
+body /deep/ .uk-form input[type="email"]:focus,
+body /deep/ .uk-form input[type="url"]:focus,
+body /deep/ .uk-form input[type="search"]:focus,
+body /deep/ .uk-form input[type="tel"]:focus,
+body /deep/ .uk-form input[type="color"]:focus {
+  border-color: #99baca;
+  outline: 0;
+  background: #f5fbfe;
+  color: #444444;
+}
+body /deep/ .uk-form select:disabled,
+body /deep/ .uk-form textarea:disabled,
+body /deep/ .uk-form input:not([type]):disabled,
+body /deep/ .uk-form input[type="text"]:disabled,
+body /deep/ .uk-form input[type="password"]:disabled,
+body /deep/ .uk-form input[type="datetime"]:disabled,
+body /deep/ .uk-form input[type="datetime-local"]:disabled,
+body /deep/ .uk-form input[type="date"]:disabled,
+body /deep/ .uk-form input[type="month"]:disabled,
+body /deep/ .uk-form input[type="time"]:disabled,
+body /deep/ .uk-form input[type="week"]:disabled,
+body /deep/ .uk-form input[type="number"]:disabled,
+body /deep/ .uk-form input[type="email"]:disabled,
+body /deep/ .uk-form input[type="url"]:disabled,
+body /deep/ .uk-form input[type="search"]:disabled,
+body /deep/ .uk-form input[type="tel"]:disabled,
+body /deep/ .uk-form input[type="color"]:disabled {
+  border-color: #dddddd;
+  background-color: #fafafa;
+  color: #999999;
+}
+/*
+ * Placeholder
+ */
+body /deep/ .uk-form :-ms-input-placeholder {
+  color: #999999 !important;
+}
+body /deep/ .uk-form ::-moz-placeholder {
+  color: #999999;
+}
+body /deep/ .uk-form ::-webkit-input-placeholder {
+  color: #999999;
+}
+body /deep/ .uk-form :disabled:-ms-input-placeholder {
+  color: #999999 !important;
+}
+body /deep/ .uk-form :disabled::-moz-placeholder {
+  color: #999999;
+}
+body /deep/ .uk-form :disabled::-webkit-input-placeholder {
+  color: #999999;
+}
+/*
+ * Legend
+ * 1. Behave like block element
+ * 2. Correct `color` not being inherited in IE 8/9/10/11.
+ * 3. Remove padding
+ * 4. `margin-bottom` is not working in Safari and Opera.
+ *    Using `padding` and :after instead to create the border
+ * 5. Style
+ */
+body /deep/ .uk-form legend {
+  /* 1 */
+  width: 100%;
+  /* 2 */
+  border: 0;
+  /* 3 */
+  padding: 0;
+  /* 4 */
+  padding-bottom: 15px;
+  /* 5 */
+  font-size: 18px;
+  line-height: 30px;
+}
+/*
+ * 1. Fixes IE9
+ */
+body /deep/ .uk-form legend:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #dddddd;
+  /* 1 */
+  width: 100%;
+}
+/* Size modifiers
+ * Higher specificity needed to override defaults
+ ========================================================================== */
+body /deep/ select.uk-form-small,
+body /deep/ textarea.uk-form-small,
+body /deep/ input[type].uk-form-small,
+body /deep/ input:not([type]).uk-form-small {
+  height: 25px;
+  padding: 3px 3px;
+  font-size: 12px;
+}
+body /deep/ select.uk-form-large,
+body /deep/ textarea.uk-form-large,
+body /deep/ input[type].uk-form-large,
+body /deep/ input:not([type]).uk-form-large {
+  height: 40px;
+  padding: 8px 6px;
+  font-size: 16px;
+}
+/* Reset height
+ * Must be after size modifiers
+ ========================================================================== */
+body /deep/ .uk-form textarea,
+body /deep/ .uk-form select[multiple],
+body /deep/ .uk-form select[size] {
+  height: auto;
+}
+/* Validation states
+ * Using !important to keep the selector simple
+ ========================================================================== */
+/*
+ * Error state
+ */
+body /deep/ .uk-form-danger {
+  border-color: #dc8d99 !important;
+  background: #fff7f8 !important;
+  color: #d85030 !important;
+}
+/*
+ * Success state
+ */
+body /deep/ .uk-form-success {
+  border-color: #8ec73b !important;
+  background: #fafff2 !important;
+  color: #659f13 !important;
+}
+/* Style modifiers
+ * Using !important to keep the selector simple
+ ========================================================================== */
+/*
+ * Blank form
+ */
+body /deep/ .uk-form-blank {
+  border-color: transparent !important;
+  border-style: dashed !important;
+  background: none !important;
+}
+body /deep/ .uk-form-blank:focus {
+  border-color: #dddddd !important;
+}
+/* Size sub-modifiers
+ ========================================================================== */
+/*
+ * Fixed widths
+ * Different widths for mini sized `input` and `select` elements
+ */
+body /deep/ input.uk-form-width-mini {
+  width: 40px;
+}
+body /deep/ select.uk-form-width-mini {
+  width: 65px;
+}
+body /deep/ .uk-form-width-small {
+  width: 130px;
+}
+body /deep/ .uk-form-width-medium {
+  width: 200px;
+}
+body /deep/ .uk-form-width-large {
+  width: 500px;
+}
+/* Sub-objects: `uk-form-row`
+ * Groups labels and controls in rows
+ ========================================================================== */
+/*
+ * Micro clearfix
+ * Needed for `uk-form-horizontal` modifier
+ */
+body /deep/ .uk-form-row:before,
+body /deep/ .uk-form-row:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-form-row:after {
+  clear: both;
+}
+/*
+ * Vertical gutter
+ */
+body /deep/ .uk-form-row + .uk-form-row {
+  margin-top: 15px;
+}
+/* Help text
+ body /deep/ * Sub-object: `uk-form-help-inline`, `uk-form-help-block`
+ ========================================================================== */
+body /deep/ .uk-form-help-inline {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+body /deep/ .uk-form-help-block {
+  margin: 5px 0 0 0;
+}
+/* Controls content
+ body /deep/ * Sub-object: `uk-form-controls`, `uk-form-controls-condensed`
+ ========================================================================== */
+/*
+ * Remove margins
+ */
+body /deep/ .uk-form-controls > :first-child {
+  margin-top: 0;
+}
+body /deep/ .uk-form-controls > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Group controls and text into blocks with a small spacing between blocks
+ */
+body /deep/ .uk-form-controls-condensed {
+  margin: 5px 0;
+}
+/* Modifier: `uk-form-stacked`
+ * Requires sub-object: `uk-form-label`
+ ========================================================================== */
+body /deep/ .uk-form-stacked .uk-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* Modifier: `uk-form-horizontal`
+ body /deep/ * Requires sub-objects: `uk-form-label`, `uk-form-controls`
+ ========================================================================== */
+/* Tablet portrait and smaller */
+body /deep/ @media (max-width: 959px) {
+  /* Behave like `uk-form-stacked` */
+  body /deep/ .uk-form-horizontal .uk-form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+}
+/* Desktop and bigger */
+body /deep/ @media (min-width: 960px) {
+  body /deep/ .uk-form-horizontal .uk-form-label {
+    width: 200px;
+    margin-top: 5px;
+    float: left;
+  }
+  body /deep/ .uk-form-horizontal .uk-form-controls {
+    margin-left: 215px;
+  }
+  /* Better vertical alignment if controls are checkboxes and radio buttons with text */
+  body /deep/ .uk-form-horizontal .uk-form-controls-text {
+    padding-top: 5px;
+  }
+}
+/* Sub-object: `uk-form-icon`
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Create position context
+ * 3. Prevent `inline-block` consequences
+ */
+body /deep/ .uk-form-icon {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+}
+/*
+ * 1. Make form element clickable through icon
+ */
+body /deep/ .uk-form-icon > [class*='uk-icon-'] {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  margin-top: -7px;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
+  /* 1 */
+  pointer-events: none;
+}
+body /deep/ .uk-form-icon:not(.uk-form-icon-flip) > input {
+  padding-left: 30px !important;
+}
+/*
+ * Sub-modifier: `uk-form-icon-flip`
+ */
+body /deep/ .uk-form-icon-flip > [class*='uk-icon-'] {
+  right: 0;
+}
+body /deep/ .uk-form-icon-flip > input {
+  padding-right: 30px !important;
+}
+/* ========================================================================
+   Component: Button
+ ========================================================================== */
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+body /deep/ .uk-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Correct inability to style clickable `input` types in iOS.
+ body /deep/ * 2. Remove margins in Chrome, Safari and Opera.
+ * 3. Remove borders for `button`.
+ * 4. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 5. Correct `font` properties and `color` not being inherited for `button`.
+ * 6. Address inconsistent `text-transform` inheritance which is only inherit in Firefox and IE
+ * 7. Style
+ * 8. `line-height` is used to create a height
+ * 9. `min-height` is necessary for `input` elements in Firefox and Opera because `line-height` is not working.
+ * 10. Reset button group whitespace hack
+ * 11. Required for `a`.
+ */
+body /deep/ .uk-button {
+  /* 1 */
+  -webkit-appearance: none;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border: none;
+  /* 4 */
+  overflow: visible;
+  /* 5 */
+  font: inherit;
+  color: #444444;
+  /* 6 */
+  text-transform: none;
+  /* 7 */
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 12px;
+  background: #f5f5f5;
+  vertical-align: middle;
+  /* 8 */
+  line-height: 28px;
+  /* 9 */
+  min-height: 30px;
+  /* 10 */
+  font-size: 1rem;
+  /* 11 */
+  text-decoration: none;
+  text-align: center;
+  body /deep/ border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+body /deep/ .uk-button:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ * 3. Required for `a` elements
+ */
+body /deep/ .uk-button:hover,
+body /deep/ .uk-button:focus {
+  background-color: #fafafa;
+  color: #444444;
+  /* 2 */
+  outline: none;
+  /* 3 */
+  text-decoration: none;
+  body /deep/ border-color: rgba(0, 0, 0, 0.16);
+}
+/* Active */
+body /deep/ .uk-button:active,
+body /deep/ .uk-button.uk-active {
+  background-color: #eeeeee;
+  color: #444444;
+}
+/* Color modifiers
+ ========================================================================== */
+/*
+ * Modifier: `uk-button-primary`
+ */
+body /deep/ .uk-button-primary {
+  background-color: #00a8e6;
+  color: #ffffff;
+}
+/* Hover */
+body /deep/ .uk-button-primary:hover,
+body /deep/ .uk-button-primary:focus {
+  background-color: #35b3ee;
+  color: #ffffff;
+}
+/* Active */
+body /deep/ .uk-button-primary:active,
+body /deep/ .uk-button-primary.uk-active {
+  background-color: #0091ca;
+  color: #ffffff;
+}
+/*
+ * Modifier: `uk-button-success`
+ */
+body /deep/ .uk-button-success {
+  background-color: #8cc14c;
+  color: #ffffff;
+}
+/* Hover */
+body /deep/ .uk-button-success:hover,
+body /deep/ .uk-button-success:focus {
+  background-color: #8ec73b;
+  color: #ffffff;
+}
+/* Active */
+body /deep/ .uk-button-success:active,
+body /deep/ .uk-button-success.uk-active {
+  background-color: #72ae41;
+  color: #ffffff;
+}
+/*
+ * Modifier: `uk-button-danger`
+ */
+body /deep/ .uk-button-danger {
+  background-color: #da314b;
+  color: #ffffff;
+}
+/* Hover */
+body /deep/ .uk-button-danger:hover,
+body /deep/ .uk-button-danger:focus {
+  background-color: #e4354f;
+  color: #ffffff;
+}
+/* Active */
+body /deep/ .uk-button-danger:active,
+body /deep/ .uk-button-danger.uk-active {
+  background-color: #c91032;
+  color: #ffffff;
+}
+/* Disabled state
+ * Overrides also the color modifiers
+ ========================================================================== */
+/* Equal for all button types */
+body /deep/ .uk-button:disabled {
+  background-color: #fafafa;
+  color: #999999;
+  body /deep/ border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/* Modifier: `uk-button-link`
+ ========================================================================== */
+/* Reset */
+body /deep/ .uk-button-link,
+body /deep/ .uk-button-link:hover,
+body /deep/ .uk-button-link:focus,
+body /deep/ .uk-button-link:active,
+body /deep/ .uk-button-link.uk-active,
+body /deep/ .uk-button-link:disabled {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+/* Color */
+body /deep/ .uk-button-link {
+  color: #0077dd;
+}
+body /deep/ .uk-button-link:hover,
+body /deep/ .uk-button-link:focus,
+body /deep/ .uk-button-link:active,
+body /deep/ .uk-button-link.uk-active {
+  color: #005599;
+  text-decoration: underline;
+}
+body /deep/ .uk-button-link:disabled {
+  color: #999999;
+}
+/* Focus */
+body /deep/ .uk-button-link:focus {
+  outline: 1px dotted;
+}
+/* Size modifiers
+ ========================================================================== */
+body /deep/ .uk-button-mini {
+  min-height: 20px;
+  padding: 0 6px;
+  line-height: 18px;
+  font-size: 11px;
+}
+body /deep/ .uk-button-small {
+  min-height: 25px;
+  padding: 0 10px;
+  line-height: 23px;
+  font-size: 12px;
+}
+body /deep/ .uk-button-large {
+  min-height: 40px;
+  padding: 0 15px;
+  line-height: 38px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+/* Sub-object `uk-button-group`
+ ========================================================================== */
+/*
+ * 1. Behave like buttons
+ * 2. Create position context for dropdowns
+ * 3. Remove whitespace between child elements when using `inline-block`
+ * 4. Prevent buttons from wrapping
+ * 5. Remove whitespace between child elements when using `inline-block`
+ */
+body /deep/ .uk-button-group {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  font-size: 0.001px;
+  /* 4 */
+  white-space: nowrap;
+}
+body /deep/ .uk-button-group > * {
+  display: inline-block;
+}
+/* 5 */
+body /deep/ .uk-button-group .uk-button {
+  vertical-align: top;
+}
+/* Sub-object: `uk-button-dropdown`
+ ========================================================================== */
+/*
+ * 1. Behave like buttons
+ * 2. Create position context for dropdowns
+ */
+body /deep/ .uk-button-dropdown {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+}
+/* Color modifiers
+     ========================================================================== */
+body /deep/ .uk-button-primary,
+body /deep/ .uk-button-success,
+body /deep/ .uk-button-danger {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+body /deep/ .uk-button-primary:hover,
+body /deep/ .uk-button-primary:focus,
+body /deep/ .uk-button-success:hover,
+body /deep/ .uk-button-success:focus,
+body /deep/ .uk-button-danger:hover,
+body /deep/ .uk-button-danger:focus {
+  body /deep/ border-color: rgba(0, 0, 0, 0.21);
+}
+/* Sub-object `uk-button-group`
+     ========================================================================== */
+/*
+     * Reset border-radius
+     */
+body /deep/ .uk-button-group > .uk-button:not(:first-child):not(:last-child),
+body /deep/ .uk-button-group > div:not(:first-child):not(:last-child) .uk-button {
+  body /deep/ border-left-color: rgba(0, 0, 0, 0.1);
+  body /deep/ border-right-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+body /deep/ .uk-button-group > .uk-button:first-child,
+body /deep/ .uk-button-group > div:first-child .uk-button {
+  body /deep/ border-right-color: rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body /deep/ .uk-button-group > .uk-button:last-child,
+body /deep/ .uk-button-group > div:last-child .uk-button {
+  body /deep/ border-left-color: rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/*
+     * Collapse border
+     */
+body /deep/ .uk-button-group > .uk-button:nth-child(n+2),
+body /deep/ .uk-button-group > div:nth-child(n+2) .uk-button {
+  margin-left: -1px;
+}
+/*
+     * Create position context to superimpose the successor elements border
+     body /deep/ * Known issue: If you use an `a` element as button and an icon inside,
+     * the active state will not work if you click the icon inside the button
+     * Workaround: Just use a `button` or `input` element as button
+     */
+body /deep/ .uk-button-group .uk-button:hover,
+body /deep/ .uk-button-group .uk-button:active {
+  position: relative;
+}
+/* ========================================================================
+   Component: Icon
+ ========================================================================== */
+body /deep/ @font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentypebody /deep/ "), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+ * 1. Allow margin
+ * 2. Prevent inherit font style
+ * 4. Correct line-height
+ * 5. Better font rendering
+ */
+body /deep/ [class*='uk-icon-'] {
+  font-family: FontAwesome;
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  font-weight: normal;
+  font-style: normal;
+  /* 4 */
+  line-height: 1;
+  /* 5 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Size modifiers
+ ========================================================================== */
+body /deep/ .uk-icon-small:before {
+  font-size: 150%;
+  vertical-align: -10%;
+}
+body /deep/ .uk-icon-medium:before {
+  font-size: 200%;
+  vertical-align: -16%;
+}
+body /deep/ .uk-icon-large:before {
+  font-size: 250%;
+  vertical-align: -22%;
+}
+/* Modifier: `uk-icon-spin`
+ ========================================================================== */
+body /deep/ .uk-icon-spin {
+  display: inline-block;
+  -webkit-animation: uk-rotate 2s infinite linear;
+  animation: uk-rotate 2s infinite linear;
+}
+/* Modifier: `uk-icon-button`
+ ========================================================================== */
+body /deep/ .uk-icon-button {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #f5f5f5;
+  line-height: 35px;
+  color: #444444;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+body /deep/ .uk-icon-button:hover,
+body /deep/ .uk-icon-button:focus {
+  background-color: #fafafa;
+  color: #444444;
+  text-decoration: none;
+  /* 2 */
+  outline: none;
+  border-color: #d3d3d3;
+}
+/* Active */
+body /deep/ .uk-icon-button:active {
+  background-color: #eeeeee;
+  color: #444444;
+}
+/* Icon mapping
+ ========================================================================== */
+body /deep/ .uk-icon-glass:before {
+  content: "\f000";
+}
+body /deep/ .uk-icon-music:before {
+  content: "\f001";
+}
+body /deep/ .uk-icon-search:before {
+  content: "\f002";
+}
+body /deep/ .uk-icon-envelope-o:before {
+  content: "\f003";
+}
+body /deep/ .uk-icon-heart:before {
+  content: "\f004";
+}
+body /deep/ .uk-icon-star:before {
+  content: "\f005";
+}
+body /deep/ .uk-icon-star-o:before {
+  content: "\f006";
+}
+body /deep/ .uk-icon-user:before {
+  content: "\f007";
+}
+body /deep/ .uk-icon-film:before {
+  content: "\f008";
+}
+body /deep/ .uk-icon-th-large:before {
+  content: "\f009";
+}
+body /deep/ .uk-icon-th:before {
+  content: "\f00a";
+}
+body /deep/ .uk-icon-th-list:before {
+  content: "\f00b";
+}
+body /deep/ .uk-icon-check:before {
+  content: "\f00c";
+}
+body /deep/ .uk-icon-remove:before,
+body /deep/ .uk-icon-close:before,
+body /deep/ .uk-icon-times:before {
+  content: "\f00d";
+}
+body /deep/ .uk-icon-search-plus:before {
+  content: "\f00e";
+}
+body /deep/ .uk-icon-search-minus:before {
+  content: "\f010";
+}
+body /deep/ .uk-icon-power-off:before {
+  content: "\f011";
+}
+body /deep/ .uk-icon-signal:before {
+  content: "\f012";
+}
+body /deep/ .uk-icon-gear:before,
+body /deep/ .uk-icon-cog:before {
+  content: "\f013";
+}
+body /deep/ .uk-icon-trash-o:before {
+  content: "\f014";
+}
+body /deep/ .uk-icon-home:before {
+  content: "\f015";
+}
+body /deep/ .uk-icon-file-o:before {
+  content: "\f016";
+}
+body /deep/ .uk-icon-clock-o:before {
+  content: "\f017";
+}
+body /deep/ .uk-icon-road:before {
+  content: "\f018";
+}
+body /deep/ .uk-icon-download:before {
+  content: "\f019";
+}
+body /deep/ .uk-icon-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+body /deep/ .uk-icon-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+body /deep/ .uk-icon-inbox:before {
+  content: "\f01c";
+}
+body /deep/ .uk-icon-play-circle-o:before {
+  content: "\f01d";
+}
+body /deep/ .uk-icon-rotate-right:before,
+body /deep/ .uk-icon-repeat:before {
+  content: "\f01e";
+}
+body /deep/ .uk-icon-refresh:before {
+  content: "\f021";
+}
+body /deep/ .uk-icon-list-alt:before {
+  content: "\f022";
+}
+body /deep/ .uk-icon-lock:before {
+  content: "\f023";
+}
+body /deep/ .uk-icon-flag:before {
+  content: "\f024";
+}
+body /deep/ .uk-icon-headphones:before {
+  content: "\f025";
+}
+body /deep/ .uk-icon-volume-off:before {
+  content: "\f026";
+}
+body /deep/ .uk-icon-volume-down:before {
+  content: "\f027";
+}
+body /deep/ .uk-icon-volume-up:before {
+  content: "\f028";
+}
+body /deep/ .uk-icon-qrcode:before {
+  content: "\f029";
+}
+body /deep/ .uk-icon-barcode:before {
+  content: "\f02a";
+}
+body /deep/ .uk-icon-tag:before {
+  content: "\f02b";
+}
+body /deep/ .uk-icon-tags:before {
+  content: "\f02c";
+}
+body /deep/ .uk-icon-book:before {
+  content: "\f02d";
+}
+body /deep/ .uk-icon-bookmark:before {
+  content: "\f02e";
+}
+body /deep/ .uk-icon-print:before {
+  content: "\f02f";
+}
+body /deep/ .uk-icon-camera:before {
+  content: "\f030";
+}
+body /deep/ .uk-icon-font:before {
+  content: "\f031";
+}
+body /deep/ .uk-icon-bold:before {
+  content: "\f032";
+}
+body /deep/ .uk-icon-italic:before {
+  content: "\f033";
+}
+body /deep/ .uk-icon-text-height:before {
+  content: "\f034";
+}
+body /deep/ .uk-icon-text-width:before {
+  content: "\f035";
+}
+body /deep/ .uk-icon-align-left:before {
+  content: "\f036";
+}
+body /deep/ .uk-icon-align-center:before {
+  content: "\f037";
+}
+body /deep/ .uk-icon-align-right:before {
+  content: "\f038";
+}
+body /deep/ .uk-icon-align-justify:before {
+  content: "\f039";
+}
+body /deep/ .uk-icon-list:before {
+  content: "\f03a";
+}
+body /deep/ .uk-icon-dedent:before,
+body /deep/ .uk-icon-outdent:before {
+  content: "\f03b";
+}
+body /deep/ .uk-icon-indent:before {
+  content: "\f03c";
+}
+body /deep/ .uk-icon-video-camera:before {
+  content: "\f03d";
+}
+body /deep/ .uk-icon-photo:before,
+body /deep/ .uk-icon-image:before,
+body /deep/ .uk-icon-picture-o:before {
+  content: "\f03e";
+}
+body /deep/ .uk-icon-pencil:before {
+  content: "\f040";
+}
+body /deep/ .uk-icon-map-marker:before {
+  content: "\f041";
+}
+body /deep/ .uk-icon-adjust:before {
+  content: "\f042";
+}
+body /deep/ .uk-icon-tint:before {
+  content: "\f043";
+}
+body /deep/ .uk-icon-edit:before,
+body /deep/ .uk-icon-pencil-square-o:before {
+  content: "\f044";
+}
+body /deep/ .uk-icon-share-square-o:before {
+  content: "\f045";
+}
+body /deep/ .uk-icon-check-square-o:before {
+  content: "\f046";
+}
+body /deep/ .uk-icon-arrows:before {
+  content: "\f047";
+}
+body /deep/ .uk-icon-step-backward:before {
+  content: "\f048";
+}
+body /deep/ .uk-icon-fast-backward:before {
+  content: "\f049";
+}
+body /deep/ .uk-icon-backward:before {
+  content: "\f04a";
+}
+body /deep/ .uk-icon-play:before {
+  content: "\f04b";
+}
+body /deep/ .uk-icon-pause:before {
+  content: "\f04c";
+}
+body /deep/ .uk-icon-stop:before {
+  content: "\f04d";
+}
+body /deep/ .uk-icon-forward:before {
+  content: "\f04e";
+}
+body /deep/ .uk-icon-fast-forward:before {
+  content: "\f050";
+}
+body /deep/ .uk-icon-step-forward:before {
+  content: "\f051";
+}
+body /deep/ .uk-icon-eject:before {
+  content: "\f052";
+}
+body /deep/ .uk-icon-chevron-left:before {
+  content: "\f053";
+}
+body /deep/ .uk-icon-chevron-right:before {
+  content: "\f054";
+}
+body /deep/ .uk-icon-plus-circle:before {
+  content: "\f055";
+}
+body /deep/ .uk-icon-minus-circle:before {
+  content: "\f056";
+}
+body /deep/ .uk-icon-times-circle:before {
+  content: "\f057";
+}
+body /deep/ .uk-icon-check-circle:before {
+  content: "\f058";
+}
+body /deep/ .uk-icon-question-circle:before {
+  content: "\f059";
+}
+body /deep/ .uk-icon-info-circle:before {
+  content: "\f05a";
+}
+body /deep/ .uk-icon-crosshairs:before {
+  content: "\f05b";
+}
+body /deep/ .uk-icon-times-circle-o:before {
+  content: "\f05c";
+}
+body /deep/ .uk-icon-check-circle-o:before {
+  content: "\f05d";
+}
+body /deep/ .uk-icon-ban:before {
+  content: "\f05e";
+}
+body /deep/ .uk-icon-arrow-left:before {
+  content: "\f060";
+}
+body /deep/ .uk-icon-arrow-right:before {
+  content: "\f061";
+}
+body /deep/ .uk-icon-arrow-up:before {
+  content: "\f062";
+}
+body /deep/ .uk-icon-arrow-down:before {
+  content: "\f063";
+}
+body /deep/ .uk-icon-mail-forward:before,
+body /deep/ .uk-icon-share:before {
+  content: "\f064";
+}
+body /deep/ .uk-icon-expand:before {
+  content: "\f065";
+}
+body /deep/ .uk-icon-compress:before {
+  content: "\f066";
+}
+body /deep/ .uk-icon-plus:before {
+  content: "\f067";
+}
+body /deep/ .uk-icon-minus:before {
+  content: "\f068";
+}
+body /deep/ .uk-icon-asterisk:before {
+  content: "\f069";
+}
+body /deep/ .uk-icon-exclamation-circle:before {
+  content: "\f06a";
+}
+body /deep/ .uk-icon-gift:before {
+  content: "\f06b";
+}
+body /deep/ .uk-icon-leaf:before {
+  content: "\f06c";
+}
+body /deep/ .uk-icon-fire:before {
+  content: "\f06d";
+}
+body /deep/ .uk-icon-eye:before {
+  content: "\f06e";
+}
+body /deep/ .uk-icon-eye-slash:before {
+  content: "\f070";
+}
+body /deep/ .uk-icon-warning:before,
+body /deep/ .uk-icon-exclamation-triangle:before {
+  content: "\f071";
+}
+body /deep/ .uk-icon-plane:before {
+  content: "\f072";
+}
+body /deep/ .uk-icon-calendar:before {
+  content: "\f073";
+}
+body /deep/ .uk-icon-random:before {
+  content: "\f074";
+}
+body /deep/ .uk-icon-comment:before {
+  content: "\f075";
+}
+body /deep/ .uk-icon-magnet:before {
+  content: "\f076";
+}
+body /deep/ .uk-icon-chevron-up:before {
+  content: "\f077";
+}
+body /deep/ .uk-icon-chevron-down:before {
+  content: "\f078";
+}
+body /deep/ .uk-icon-retweet:before {
+  content: "\f079";
+}
+body /deep/ .uk-icon-shopping-cart:before {
+  content: "\f07a";
+}
+body /deep/ .uk-icon-folder:before {
+  content: "\f07b";
+}
+body /deep/ .uk-icon-folder-open:before {
+  content: "\f07c";
+}
+body /deep/ .uk-icon-arrows-v:before {
+  content: "\f07d";
+}
+body /deep/ .uk-icon-arrows-h:before {
+  content: "\f07e";
+}
+body /deep/ .uk-icon-bar-chart-o:before,
+body /deep/ .uk-icon-bar-chart:before {
+  content: "\f080";
+}
+body /deep/ .uk-icon-twitter-square:before {
+  content: "\f081";
+}
+body /deep/ .uk-icon-facebook-square:before {
+  content: "\f082";
+}
+body /deep/ .uk-icon-camera-retro:before {
+  content: "\f083";
+}
+body /deep/ .uk-icon-key:before {
+  content: "\f084";
+}
+body /deep/ .uk-icon-gears:before,
+body /deep/ .uk-icon-cogs:before {
+  content: "\f085";
+}
+body /deep/ .uk-icon-comments:before {
+  content: "\f086";
+}
+body /deep/ .uk-icon-thumbs-o-up:before {
+  content: "\f087";
+}
+body /deep/ .uk-icon-thumbs-o-down:before {
+  content: "\f088";
+}
+body /deep/ .uk-icon-star-half:before {
+  content: "\f089";
+}
+body /deep/ .uk-icon-heart-o:before {
+  content: "\f08a";
+}
+body /deep/ .uk-icon-sign-out:before {
+  content: "\f08b";
+}
+body /deep/ .uk-icon-linkedin-square:before {
+  content: "\f08c";
+}
+body /deep/ .uk-icon-thumb-tack:before {
+  content: "\f08d";
+}
+body /deep/ .uk-icon-external-link:before {
+  content: "\f08e";
+}
+body /deep/ .uk-icon-sign-in:before {
+  content: "\f090";
+}
+body /deep/ .uk-icon-trophy:before {
+  content: "\f091";
+}
+body /deep/ .uk-icon-github-square:before {
+  content: "\f092";
+}
+body /deep/ .uk-icon-upload:before {
+  content: "\f093";
+}
+body /deep/ .uk-icon-lemon-o:before {
+  content: "\f094";
+}
+body /deep/ .uk-icon-phone:before {
+  content: "\f095";
+}
+body /deep/ .uk-icon-square-o:before {
+  content: "\f096";
+}
+body /deep/ .uk-icon-bookmark-o:before {
+  content: "\f097";
+}
+body /deep/ .uk-icon-phone-square:before {
+  content: "\f098";
+}
+body /deep/ .uk-icon-twitter:before {
+  content: "\f099";
+}
+body /deep/ .uk-icon-facebook:before {
+  content: "\f09a";
+}
+body /deep/ .uk-icon-github:before {
+  content: "\f09b";
+}
+body /deep/ .uk-icon-unlock:before {
+  content: "\f09c";
+}
+body /deep/ .uk-icon-credit-card:before {
+  content: "\f09d";
+}
+body /deep/ .uk-icon-rss:before {
+  content: "\f09e";
+}
+body /deep/ .uk-icon-hdd-o:before {
+  content: "\f0a0";
+}
+body /deep/ .uk-icon-bullhorn:before {
+  content: "\f0a1";
+}
+body /deep/ .uk-icon-bell:before {
+  content: "\f0f3";
+}
+body /deep/ .uk-icon-certificate:before {
+  content: "\f0a3";
+}
+body /deep/ .uk-icon-hand-o-right:before {
+  content: "\f0a4";
+}
+body /deep/ .uk-icon-hand-o-left:before {
+  content: "\f0a5";
+}
+body /deep/ .uk-icon-hand-o-up:before {
+  content: "\f0a6";
+}
+body /deep/ .uk-icon-hand-o-down:before {
+  content: "\f0a7";
+}
+body /deep/ .uk-icon-arrow-circle-left:before {
+  content: "\f0a8";
+}
+body /deep/ .uk-icon-arrow-circle-right:before {
+  content: "\f0a9";
+}
+body /deep/ .uk-icon-arrow-circle-up:before {
+  content: "\f0aa";
+}
+body /deep/ .uk-icon-arrow-circle-down:before {
+  content: "\f0ab";
+}
+body /deep/ .uk-icon-globe:before {
+  content: "\f0ac";
+}
+body /deep/ .uk-icon-wrench:before {
+  content: "\f0ad";
+}
+body /deep/ .uk-icon-tasks:before {
+  content: "\f0ae";
+}
+body /deep/ .uk-icon-filter:before {
+  content: "\f0b0";
+}
+body /deep/ .uk-icon-briefcase:before {
+  content: "\f0b1";
+}
+body /deep/ .uk-icon-arrows-alt:before {
+  content: "\f0b2";
+}
+body /deep/ .uk-icon-group:before,
+body /deep/ .uk-icon-users:before {
+  content: "\f0c0";
+}
+body /deep/ .uk-icon-chain:before,
+body /deep/ .uk-icon-link:before {
+  content: "\f0c1";
+}
+body /deep/ .uk-icon-cloud:before {
+  content: "\f0c2";
+}
+body /deep/ .uk-icon-flask:before {
+  content: "\f0c3";
+}
+body /deep/ .uk-icon-cut:before,
+body /deep/ .uk-icon-scissors:before {
+  content: "\f0c4";
+}
+body /deep/ .uk-icon-copy:before,
+body /deep/ .uk-icon-files-o:before {
+  content: "\f0c5";
+}
+body /deep/ .uk-icon-paperclip:before {
+  content: "\f0c6";
+}
+body /deep/ .uk-icon-save:before,
+body /deep/ .uk-icon-floppy-o:before {
+  content: "\f0c7";
+}
+body /deep/ .uk-icon-square:before {
+  content: "\f0c8";
+}
+body /deep/ .uk-icon-navicon:before,
+body /deep/ .uk-icon-reorder:before,
+body /deep/ .uk-icon-bars:before {
+  content: "\f0c9";
+}
+body /deep/ .uk-icon-list-ul:before {
+  content: "\f0ca";
+}
+body /deep/ .uk-icon-list-ol:before {
+  content: "\f0cb";
+}
+body /deep/ .uk-icon-strikethrough:before {
+  content: "\f0cc";
+}
+body /deep/ .uk-icon-underline:before {
+  content: "\f0cd";
+}
+body /deep/ .uk-icon-table:before {
+  content: "\f0ce";
+}
+body /deep/ .uk-icon-magic:before {
+  content: "\f0d0";
+}
+body /deep/ .uk-icon-truck:before {
+  content: "\f0d1";
+}
+body /deep/ .uk-icon-pinterest:before {
+  content: "\f0d2";
+}
+body /deep/ .uk-icon-pinterest-square:before {
+  content: "\f0d3";
+}
+body /deep/ .uk-icon-google-plus-square:before {
+  content: "\f0d4";
+}
+body /deep/ .uk-icon-google-plus:before {
+  content: "\f0d5";
+}
+body /deep/ .uk-icon-money:before {
+  content: "\f0d6";
+}
+body /deep/ .uk-icon-caret-down:before {
+  content: "\f0d7";
+}
+body /deep/ .uk-icon-caret-up:before {
+  content: "\f0d8";
+}
+body /deep/ .uk-icon-caret-left:before {
+  content: "\f0d9";
+}
+body /deep/ .uk-icon-caret-right:before {
+  content: "\f0da";
+}
+body /deep/ .uk-icon-columns:before {
+  content: "\f0db";
+}
+body /deep/ .uk-icon-unsorted:before,
+body /deep/ .uk-icon-sort:before {
+  content: "\f0dc";
+}
+body /deep/ .uk-icon-sort-down:before,
+body /deep/ .uk-icon-sort-desc:before {
+  content: "\f0dd";
+}
+body /deep/ .uk-icon-sort-up:before,
+body /deep/ .uk-icon-sort-asc:before {
+  content: "\f0de";
+}
+body /deep/ .uk-icon-envelope:before {
+  content: "\f0e0";
+}
+body /deep/ .uk-icon-linkedin:before {
+  content: "\f0e1";
+}
+body /deep/ .uk-icon-rotate-left:before,
+body /deep/ .uk-icon-undo:before {
+  content: "\f0e2";
+}
+body /deep/ .uk-icon-legal:before,
+body /deep/ .uk-icon-gavel:before {
+  content: "\f0e3";
+}
+body /deep/ .uk-icon-dashboard:before,
+body /deep/ .uk-icon-tachometer:before {
+  content: "\f0e4";
+}
+body /deep/ .uk-icon-comment-o:before {
+  content: "\f0e5";
+}
+body /deep/ .uk-icon-comments-o:before {
+  content: "\f0e6";
+}
+body /deep/ .uk-icon-flash:before,
+body /deep/ .uk-icon-bolt:before {
+  content: "\f0e7";
+}
+body /deep/ .uk-icon-sitemap:before {
+  content: "\f0e8";
+}
+body /deep/ .uk-icon-umbrella:before {
+  content: "\f0e9";
+}
+body /deep/ .uk-icon-paste:before,
+body /deep/ .uk-icon-clipboard:before {
+  content: "\f0ea";
+}
+body /deep/ .uk-icon-lightbulb-o:before {
+  content: "\f0eb";
+}
+body /deep/ .uk-icon-exchange:before {
+  content: "\f0ec";
+}
+body /deep/ .uk-icon-cloud-download:before {
+  content: "\f0ed";
+}
+body /deep/ .uk-icon-cloud-upload:before {
+  content: "\f0ee";
+}
+body /deep/ .uk-icon-user-md:before {
+  content: "\f0f0";
+}
+body /deep/ .uk-icon-stethoscope:before {
+  content: "\f0f1";
+}
+body /deep/ .uk-icon-suitcase:before {
+  content: "\f0f2";
+}
+body /deep/ .uk-icon-bell-o:before {
+  content: "\f0a2";
+}
+body /deep/ .uk-icon-coffee:before {
+  content: "\f0f4";
+}
+body /deep/ .uk-icon-cutlery:before {
+  content: "\f0f5";
+}
+body /deep/ .uk-icon-file-text-o:before {
+  content: "\f0f6";
+}
+body /deep/ .uk-icon-building-o:before {
+  content: "\f0f7";
+}
+body /deep/ .uk-icon-hospital-o:before {
+  content: "\f0f8";
+}
+body /deep/ .uk-icon-ambulance:before {
+  content: "\f0f9";
+}
+body /deep/ .uk-icon-medkit:before {
+  content: "\f0fa";
+}
+body /deep/ .uk-icon-fighter-jet:before {
+  content: "\f0fb";
+}
+body /deep/ .uk-icon-beer:before {
+  content: "\f0fc";
+}
+body /deep/ .uk-icon-h-square:before {
+  content: "\f0fd";
+}
+body /deep/ .uk-icon-plus-square:before {
+  content: "\f0fe";
+}
+body /deep/ .uk-icon-angle-double-left:before {
+  content: "\f100";
+}
+body /deep/ .uk-icon-angle-double-right:before {
+  content: "\f101";
+}
+body /deep/ .uk-icon-angle-double-up:before {
+  content: "\f102";
+}
+body /deep/ .uk-icon-angle-double-down:before {
+  content: "\f103";
+}
+body /deep/ .uk-icon-angle-left:before {
+  content: "\f104";
+}
+body /deep/ .uk-icon-angle-right:before {
+  content: "\f105";
+}
+body /deep/ .uk-icon-angle-up:before {
+  content: "\f106";
+}
+body /deep/ .uk-icon-angle-down:before {
+  content: "\f107";
+}
+body /deep/ .uk-icon-desktop:before {
+  content: "\f108";
+}
+body /deep/ .uk-icon-laptop:before {
+  content: "\f109";
+}
+body /deep/ .uk-icon-tablet:before {
+  content: "\f10a";
+}
+body /deep/ .uk-icon-mobile-phone:before,
+body /deep/ .uk-icon-mobile:before {
+  content: "\f10b";
+}
+body /deep/ .uk-icon-circle-o:before {
+  content: "\f10c";
+}
+body /deep/ .uk-icon-quote-left:before {
+  content: "\f10d";
+}
+body /deep/ .uk-icon-quote-right:before {
+  content: "\f10e";
+}
+body /deep/ .uk-icon-spinner:before {
+  content: "\f110";
+}
+body /deep/ .uk-icon-circle:before {
+  content: "\f111";
+}
+body /deep/ .uk-icon-mail-reply:before,
+body /deep/ .uk-icon-reply:before {
+  content: "\f112";
+}
+body /deep/ .uk-icon-github-alt:before {
+  content: "\f113";
+}
+body /deep/ .uk-icon-folder-o:before {
+  content: "\f114";
+}
+body /deep/ .uk-icon-folder-open-o:before {
+  content: "\f115";
+}
+body /deep/ .uk-icon-smile-o:before {
+  content: "\f118";
+}
+body /deep/ .uk-icon-frown-o:before {
+  content: "\f119";
+}
+body /deep/ .uk-icon-meh-o:before {
+  content: "\f11a";
+}
+body /deep/ .uk-icon-gamepad:before {
+  content: "\f11b";
+}
+body /deep/ .uk-icon-keyboard-o:before {
+  content: "\f11c";
+}
+body /deep/ .uk-icon-flag-o:before {
+  content: "\f11d";
+}
+body /deep/ .uk-icon-flag-checkered:before {
+  content: "\f11e";
+}
+body /deep/ .uk-icon-terminal:before {
+  content: "\f120";
+}
+body /deep/ .uk-icon-code:before {
+  content: "\f121";
+}
+body /deep/ .uk-icon-mail-reply-all:before,
+body /deep/ .uk-icon-reply-all:before {
+  content: "\f122";
+}
+body /deep/ .uk-icon-star-half-empty:before,
+body /deep/ .uk-icon-star-half-full:before,
+body /deep/ .uk-icon-star-half-o:before {
+  content: "\f123";
+}
+body /deep/ .uk-icon-location-arrow:before {
+  content: "\f124";
+}
+body /deep/ .uk-icon-crop:before {
+  content: "\f125";
+}
+body /deep/ .uk-icon-code-fork:before {
+  content: "\f126";
+}
+body /deep/ .uk-icon-unlink:before,
+body /deep/ .uk-icon-chain-broken:before {
+  content: "\f127";
+}
+body /deep/ .uk-icon-question:before {
+  content: "\f128";
+}
+body /deep/ .uk-icon-info:before {
+  content: "\f129";
+}
+body /deep/ .uk-icon-exclamation:before {
+  content: "\f12a";
+}
+body /deep/ .uk-icon-superscript:before {
+  content: "\f12b";
+}
+body /deep/ .uk-icon-subscript:before {
+  content: "\f12c";
+}
+body /deep/ .uk-icon-eraser:before {
+  content: "\f12d";
+}
+body /deep/ .uk-icon-puzzle-piece:before {
+  content: "\f12e";
+}
+body /deep/ .uk-icon-microphone:before {
+  content: "\f130";
+}
+body /deep/ .uk-icon-microphone-slash:before {
+  content: "\f131";
+}
+body /deep/ .uk-icon-shield:before {
+  content: "\f132";
+}
+body /deep/ .uk-icon-calendar-o:before {
+  content: "\f133";
+}
+body /deep/ .uk-icon-fire-extinguisher:before {
+  content: "\f134";
+}
+body /deep/ .uk-icon-rocket:before {
+  content: "\f135";
+}
+body /deep/ .uk-icon-maxcdn:before {
+  content: "\f136";
+}
+body /deep/ .uk-icon-chevron-circle-left:before {
+  content: "\f137";
+}
+body /deep/ .uk-icon-chevron-circle-right:before {
+  content: "\f138";
+}
+body /deep/ .uk-icon-chevron-circle-up:before {
+  content: "\f139";
+}
+body /deep/ .uk-icon-chevron-circle-down:before {
+  content: "\f13a";
+}
+body /deep/ .uk-icon-html5:before {
+  content: "\f13b";
+}
+body /deep/ .uk-icon-css3:before {
+  content: "\f13c";
+}
+body /deep/ .uk-icon-anchor:before {
+  content: "\f13d";
+}
+body /deep/ .uk-icon-unlock-alt:before {
+  content: "\f13e";
+}
+body /deep/ .uk-icon-bullseye:before {
+  content: "\f140";
+}
+body /deep/ .uk-icon-ellipsis-h:before {
+  content: "\f141";
+}
+body /deep/ .uk-icon-ellipsis-v:before {
+  content: "\f142";
+}
+body /deep/ .uk-icon-rss-square:before {
+  content: "\f143";
+}
+body /deep/ .uk-icon-play-circle:before {
+  content: "\f144";
+}
+body /deep/ .uk-icon-ticket:before {
+  content: "\f145";
+}
+body /deep/ .uk-icon-minus-square:before {
+  content: "\f146";
+}
+body /deep/ .uk-icon-minus-square-o:before {
+  content: "\f147";
+}
+body /deep/ .uk-icon-level-up:before {
+  content: "\f148";
+}
+body /deep/ .uk-icon-level-down:before {
+  content: "\f149";
+}
+body /deep/ .uk-icon-check-square:before {
+  content: "\f14a";
+}
+body /deep/ .uk-icon-pencil-square:before {
+  content: "\f14b";
+}
+body /deep/ .uk-icon-external-link-square:before {
+  content: "\f14c";
+}
+body /deep/ .uk-icon-share-square:before {
+  content: "\f14d";
+}
+body /deep/ .uk-icon-compass:before {
+  content: "\f14e";
+}
+body /deep/ .uk-icon-toggle-down:before,
+body /deep/ .uk-icon-caret-square-o-down:before {
+  content: "\f150";
+}
+body /deep/ .uk-icon-toggle-up:before,
+body /deep/ .uk-icon-caret-square-o-up:before {
+  content: "\f151";
+}
+body /deep/ .uk-icon-toggle-right:before,
+body /deep/ .uk-icon-caret-square-o-right:before {
+  content: "\f152";
+}
+body /deep/ .uk-icon-euro:before,
+body /deep/ .uk-icon-eur:before {
+  content: "\f153";
+}
+body /deep/ .uk-icon-gbp:before {
+  content: "\f154";
+}
+body /deep/ .uk-icon-dollar:before,
+body /deep/ .uk-icon-usd:before {
+  content: "\f155";
+}
+body /deep/ .uk-icon-rupee:before,
+body /deep/ .uk-icon-inr:before {
+  content: "\f156";
+}
+body /deep/ .uk-icon-cny:before,
+body /deep/ .uk-icon-rmb:before,
+body /deep/ .uk-icon-yen:before,
+body /deep/ .uk-icon-jpy:before {
+  content: "\f157";
+}
+body /deep/ .uk-icon-ruble:before,
+body /deep/ .uk-icon-rouble:before,
+body /deep/ .uk-icon-rub:before {
+  content: "\f158";
+}
+body /deep/ .uk-icon-won:before,
+body /deep/ .uk-icon-krw:before {
+  content: "\f159";
+}
+body /deep/ .uk-icon-bitcoin:before,
+body /deep/ .uk-icon-btc:before {
+  content: "\f15a";
+}
+body /deep/ .uk-icon-file:before {
+  content: "\f15b";
+}
+body /deep/ .uk-icon-file-text:before {
+  content: "\f15c";
+}
+body /deep/ .uk-icon-sort-alpha-asc:before {
+  content: "\f15d";
+}
+body /deep/ .uk-icon-sort-alpha-desc:before {
+  content: "\f15e";
+}
+body /deep/ .uk-icon-sort-amount-asc:before {
+  content: "\f160";
+}
+body /deep/ .uk-icon-sort-amount-desc:before {
+  content: "\f161";
+}
+body /deep/ .uk-icon-sort-numeric-asc:before {
+  content: "\f162";
+}
+body /deep/ .uk-icon-sort-numeric-desc:before {
+  content: "\f163";
+}
+body /deep/ .uk-icon-thumbs-up:before {
+  content: "\f164";
+}
+body /deep/ .uk-icon-thumbs-down:before {
+  content: "\f165";
+}
+body /deep/ .uk-icon-youtube-square:before {
+  content: "\f166";
+}
+body /deep/ .uk-icon-youtube:before {
+  content: "\f167";
+}
+body /deep/ .uk-icon-xing:before {
+  content: "\f168";
+}
+body /deep/ .uk-icon-xing-square:before {
+  content: "\f169";
+}
+body /deep/ .uk-icon-youtube-play:before {
+  content: "\f16a";
+}
+body /deep/ .uk-icon-dropbox:before {
+  content: "\f16b";
+}
+body /deep/ .uk-icon-stack-overflow:before {
+  content: "\f16c";
+}
+body /deep/ .uk-icon-instagram:before {
+  content: "\f16d";
+}
+body /deep/ .uk-icon-flickr:before {
+  content: "\f16e";
+}
+body /deep/ .uk-icon-adn:before {
+  content: "\f170";
+}
+body /deep/ .uk-icon-bitbucket:before {
+  content: "\f171";
+}
+body /deep/ .uk-icon-bitbucket-square:before {
+  content: "\f172";
+}
+body /deep/ .uk-icon-tumblr:before {
+  content: "\f173";
+}
+body /deep/ .uk-icon-tumblr-square:before {
+  content: "\f174";
+}
+body /deep/ .uk-icon-long-arrow-down:before {
+  content: "\f175";
+}
+body /deep/ .uk-icon-long-arrow-up:before {
+  content: "\f176";
+}
+body /deep/ .uk-icon-long-arrow-left:before {
+  content: "\f177";
+}
+body /deep/ .uk-icon-long-arrow-right:before {
+  content: "\f178";
+}
+body /deep/ .uk-icon-apple:before {
+  content: "\f179";
+}
+body /deep/ .uk-icon-windows:before {
+  content: "\f17a";
+}
+body /deep/ .uk-icon-android:before {
+  content: "\f17b";
+}
+body /deep/ .uk-icon-linux:before {
+  content: "\f17c";
+}
+body /deep/ .uk-icon-dribbble:before {
+  content: "\f17d";
+}
+body /deep/ .uk-icon-skype:before {
+  content: "\f17e";
+}
+body /deep/ .uk-icon-foursquare:before {
+  content: "\f180";
+}
+body /deep/ .uk-icon-trello:before {
+  content: "\f181";
+}
+body /deep/ .uk-icon-female:before {
+  content: "\f182";
+}
+body /deep/ .uk-icon-male:before {
+  content: "\f183";
+}
+body /deep/ .uk-icon-gittip:before {
+  content: "\f184";
+}
+body /deep/ .uk-icon-sun-o:before {
+  content: "\f185";
+}
+body /deep/ .uk-icon-moon-o:before {
+  content: "\f186";
+}
+body /deep/ .uk-icon-archive:before {
+  content: "\f187";
+}
+body /deep/ .uk-icon-bug:before {
+  content: "\f188";
+}
+body /deep/ .uk-icon-vk:before {
+  content: "\f189";
+}
+body /deep/ .uk-icon-weibo:before {
+  content: "\f18a";
+}
+body /deep/ .uk-icon-renren:before {
+  content: "\f18b";
+}
+body /deep/ .uk-icon-pagelines:before {
+  content: "\f18c";
+}
+body /deep/ .uk-icon-stack-exchange:before {
+  content: "\f18d";
+}
+body /deep/ .uk-icon-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+body /deep/ .uk-icon-arrow-circle-o-left:before {
+  content: "\f190";
+}
+body /deep/ .uk-icon-toggle-left:before,
+body /deep/ .uk-icon-caret-square-o-left:before {
+  content: "\f191";
+}
+body /deep/ .uk-icon-dot-circle-o:before {
+  content: "\f192";
+}
+body /deep/ .uk-icon-wheelchair:before {
+  content: "\f193";
+}
+body /deep/ .uk-icon-vimeo-square:before {
+  content: "\f194";
+}
+body /deep/ .uk-icon-turkish-lira:before,
+body /deep/ .uk-icon-try:before {
+  content: "\f195";
+}
+body /deep/ .uk-icon-plus-square-o:before {
+  content: "\f196";
+}
+body /deep/ .uk-icon-space-shuttle:before {
+  content: "\f197";
+}
+body /deep/ .uk-icon-slack:before {
+  content: "\f198";
+}
+body /deep/ .uk-icon-envelope-square:before {
+  content: "\f199";
+}
+body /deep/ .uk-icon-wordpress:before {
+  content: "\f19a";
+}
+body /deep/ .uk-icon-openid:before {
+  content: "\f19b";
+}
+body /deep/ .uk-icon-institution:before,
+body /deep/ .uk-icon-bank:before,
+body /deep/ .uk-icon-university:before {
+  content: "\f19c";
+}
+body /deep/ .uk-icon-mortar-board:before,
+body /deep/ .uk-icon-graduation-cap:before {
+  content: "\f19d";
+}
+body /deep/ .uk-icon-yahoo:before {
+  content: "\f19e";
+}
+body /deep/ .uk-icon-google:before {
+  content: "\f1a0";
+}
+body /deep/ .uk-icon-reddit:before {
+  content: "\f1a1";
+}
+body /deep/ .uk-icon-reddit-square:before {
+  content: "\f1a2";
+}
+body /deep/ .uk-icon-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+body /deep/ .uk-icon-stumbleupon:before {
+  content: "\f1a4";
+}
+body /deep/ .uk-icon-delicious:before {
+  content: "\f1a5";
+}
+body /deep/ .uk-icon-digg:before {
+  content: "\f1a6";
+}
+body /deep/ .uk-icon-pied-piper:before {
+  content: "\f1a7";
+}
+body /deep/ .uk-icon-pied-piper-alt:before {
+  content: "\f1a8";
+}
+body /deep/ .uk-icon-drupal:before {
+  content: "\f1a9";
+}
+body /deep/ .uk-icon-joomla:before {
+  content: "\f1aa";
+}
+body /deep/ .uk-icon-language:before {
+  content: "\f1ab";
+}
+body /deep/ .uk-icon-fax:before {
+  content: "\f1ac";
+}
+body /deep/ .uk-icon-building:before {
+  content: "\f1ad";
+}
+body /deep/ .uk-icon-child:before {
+  content: "\f1ae";
+}
+body /deep/ .uk-icon-paw:before {
+  content: "\f1b0";
+}
+body /deep/ .uk-icon-spoon:before {
+  content: "\f1b1";
+}
+body /deep/ .uk-icon-cube:before {
+  content: "\f1b2";
+}
+body /deep/ .uk-icon-cubes:before {
+  content: "\f1b3";
+}
+body /deep/ .uk-icon-behance:before {
+  content: "\f1b4";
+}
+body /deep/ .uk-icon-behance-square:before {
+  content: "\f1b5";
+}
+body /deep/ .uk-icon-steam:before {
+  content: "\f1b6";
+}
+body /deep/ .uk-icon-steam-square:before {
+  content: "\f1b7";
+}
+body /deep/ .uk-icon-recycle:before {
+  content: "\f1b8";
+}
+body /deep/ .uk-icon-automobile:before,
+body /deep/ .uk-icon-car:before {
+  content: "\f1b9";
+}
+body /deep/ .uk-icon-cab:before,
+body /deep/ .uk-icon-taxi:before {
+  content: "\f1ba";
+}
+body /deep/ .uk-icon-tree:before {
+  content: "\f1bb";
+}
+body /deep/ .uk-icon-spotify:before {
+  content: "\f1bc";
+}
+body /deep/ .uk-icon-deviantart:before {
+  content: "\f1bd";
+}
+body /deep/ .uk-icon-soundcloud:before {
+  content: "\f1be";
+}
+body /deep/ .uk-icon-database:before {
+  content: "\f1c0";
+}
+body /deep/ .uk-icon-file-pdf-o:before {
+  content: "\f1c1";
+}
+body /deep/ .uk-icon-file-word-o:before {
+  content: "\f1c2";
+}
+body /deep/ .uk-icon-file-excel-o:before {
+  content: "\f1c3";
+}
+body /deep/ .uk-icon-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+body /deep/ .uk-icon-file-photo-o:before,
+body /deep/ .uk-icon-file-picture-o:before,
+body /deep/ .uk-icon-file-image-o:before {
+  content: "\f1c5";
+}
+body /deep/ .uk-icon-file-zip-o:before,
+body /deep/ .uk-icon-file-archive-o:before {
+  content: "\f1c6";
+}
+body /deep/ .uk-icon-file-sound-o:before,
+body /deep/ .uk-icon-file-audio-o:before {
+  content: "\f1c7";
+}
+body /deep/ .uk-icon-file-movie-o:before,
+body /deep/ .uk-icon-file-video-o:before {
+  content: "\f1c8";
+}
+body /deep/ .uk-icon-file-code-o:before {
+  content: "\f1c9";
+}
+body /deep/ .uk-icon-vine:before {
+  content: "\f1ca";
+}
+body /deep/ .uk-icon-codepen:before {
+  content: "\f1cb";
+}
+body /deep/ .uk-icon-jsfiddle:before {
+  content: "\f1cc";
+}
+body /deep/ .uk-icon-life-bouy:before,
+body /deep/ .uk-icon-life-buoy:before,
+body /deep/ .uk-icon-life-saver:before,
+body /deep/ .uk-icon-support:before,
+body /deep/ .uk-icon-life-ring:before {
+  content: "\f1cd";
+}
+body /deep/ .uk-icon-circle-o-notch:before {
+  content: "\f1ce";
+}
+body /deep/ .uk-icon-ra:before,
+body /deep/ .uk-icon-rebel:before {
+  content: "\f1d0";
+}
+body /deep/ .uk-icon-ge:before,
+body /deep/ .uk-icon-empire:before {
+  content: "\f1d1";
+}
+body /deep/ .uk-icon-git-square:before {
+  content: "\f1d2";
+}
+body /deep/ .uk-icon-git:before {
+  content: "\f1d3";
+}
+body /deep/ .uk-icon-hacker-news:before {
+  content: "\f1d4";
+}
+body /deep/ .uk-icon-tencent-weibo:before {
+  content: "\f1d5";
+}
+body /deep/ .uk-icon-qq:before {
+  content: "\f1d6";
+}
+body /deep/ .uk-icon-wechat:before,
+body /deep/ .uk-icon-weixin:before {
+  content: "\f1d7";
+}
+body /deep/ .uk-icon-send:before,
+body /deep/ .uk-icon-paper-plane:before {
+  content: "\f1d8";
+}
+body /deep/ .uk-icon-send-o:before,
+body /deep/ .uk-icon-paper-plane-o:before {
+  content: "\f1d9";
+}
+body /deep/ .uk-icon-history:before {
+  content: "\f1da";
+}
+body /deep/ .uk-icon-circle-thin:before {
+  content: "\f1db";
+}
+body /deep/ .uk-icon-header:before {
+  content: "\f1dc";
+}
+body /deep/ .uk-icon-paragraph:before {
+  content: "\f1dd";
+}
+body /deep/ .uk-icon-sliders:before {
+  content: "\f1de";
+}
+body /deep/ .uk-icon-share-alt:before {
+  content: "\f1e0";
+}
+body /deep/ .uk-icon-share-alt-square:before {
+  content: "\f1e1";
+}
+body /deep/ .uk-icon-bomb:before {
+  content: "\f1e2";
+}
+body /deep/ .uk-icon-soccer-ball-o:before,
+body /deep/ .uk-icon-futbol-o:before {
+  content: "\f1e3";
+}
+body /deep/ .uk-icon-tty:before {
+  content: "\f1e4";
+}
+body /deep/ .uk-icon-binoculars:before {
+  content: "\f1e5";
+}
+body /deep/ .uk-icon-plug:before {
+  content: "\f1e6";
+}
+body /deep/ .uk-icon-slideshare:before {
+  content: "\f1e7";
+}
+body /deep/ .uk-icon-twitch:before {
+  content: "\f1e8";
+}
+body /deep/ .uk-icon-yelp:before {
+  content: "\f1e9";
+}
+body /deep/ .uk-icon-newspaper-o:before {
+  content: "\f1ea";
+}
+body /deep/ .uk-icon-wifi:before {
+  content: "\f1eb";
+}
+body /deep/ .uk-icon-calculator:before {
+  content: "\f1ec";
+}
+body /deep/ .uk-icon-paypal:before {
+  content: "\f1ed";
+}
+body /deep/ .uk-icon-google-wallet:before {
+  content: "\f1ee";
+}
+body /deep/ .uk-icon-cc-visa:before {
+  content: "\f1f0";
+}
+body /deep/ .uk-icon-cc-mastercard:before {
+  content: "\f1f1";
+}
+body /deep/ .uk-icon-cc-discover:before {
+  content: "\f1f2";
+}
+body /deep/ .uk-icon-cc-amex:before {
+  content: "\f1f3";
+}
+body /deep/ .uk-icon-cc-paypal:before {
+  content: "\f1f4";
+}
+body /deep/ .uk-icon-cc-stripe:before {
+  content: "\f1f5";
+}
+body /deep/ .uk-icon-bell-slash:before {
+  content: "\f1f6";
+}
+body /deep/ .uk-icon-bell-slash-o:before {
+  content: "\f1f7";
+}
+body /deep/ .uk-icon-trash:before {
+  content: "\f1f8";
+}
+body /deep/ .uk-icon-copyright:before {
+  content: "\f1f9";
+}
+body /deep/ .uk-icon-at:before {
+  content: "\f1fa";
+}
+body /deep/ .uk-icon-eyedropper:before {
+  content: "\f1fb";
+}
+body /deep/ .uk-icon-paint-brush:before {
+  content: "\f1fc";
+}
+body /deep/ .uk-icon-birthday-cake:before {
+  content: "\f1fd";
+}
+body /deep/ .uk-icon-area-chart:before {
+  content: "\f1fe";
+}
+body /deep/ .uk-icon-pie-chart:before {
+  content: "\f200";
+}
+body /deep/ .uk-icon-line-chart:before {
+  content: "\f201";
+}
+body /deep/ .uk-icon-lastfm:before {
+  content: "\f202";
+}
+body /deep/ .uk-icon-lastfm-square:before {
+  content: "\f203";
+}
+body /deep/ .uk-icon-toggle-off:before {
+  content: "\f204";
+}
+body /deep/ .uk-icon-toggle-on:before {
+  content: "\f205";
+}
+body /deep/ .uk-icon-bicycle:before {
+  content: "\f206";
+}
+body /deep/ .uk-icon-bus:before {
+  content: "\f207";
+}
+body /deep/ .uk-icon-ioxhost:before {
+  content: "\f208";
+}
+body /deep/ .uk-icon-angellist:before {
+  content: "\f209";
+}
+body /deep/ .uk-icon-cc:before {
+  content: "\f20a";
+}
+body /deep/ .uk-icon-shekel:before,
+body /deep/ .uk-icon-sheqel:before,
+body /deep/ .uk-icon-ils:before {
+  content: "\f20b";
+}
+body /deep/ .uk-icon-meanpath:before {
+  content: "\f20c";
+}
+/* ========================================================================
+   Component: Close
+ ========================================================================== */
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+body /deep/ .uk-close::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Correct inability to style clickable `input` types in iOS.
+ body /deep/ * 2. Remove margins in Chrome, Safari and Opera.
+ * 3. Remove borders for `button`.
+ * 4. Address `overflow` set to `hidden` in IE 8/9/10/11.
+ * 5. Correct `font` properties and `color` not being inherited for `button`.
+ * 6. Address inconsistent `text-transform` inheritance which is only inherit in Firefox and IE
+ * 7. Remove default `button` padding and background color
+ * 8. Style
+ */
+body /deep/ .uk-close {
+  /* 1 */
+  -webkit-appearance: none;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border: none;
+  /* 4 */
+  overflow: visible;
+  /* 5 */
+  font: inherit;
+  color: inherit;
+  /* 6 */
+  text-transform: none;
+  /* 7. */
+  padding: 0;
+  background: transparent;
+  /* 8 */
+  display: inline-block;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0.3;
+}
+/* Icon */
+body /deep/ .uk-close:after {
+  display: block;
+  content: "\f00d";
+  font-family: FontAwesome;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ * 3. Required for `a` elements
+ */
+body /deep/ .uk-close:hover,
+body /deep/ .uk-close:focus {
+  opacity: 0.5;
+  /* 2 */
+  outline: none;
+  /* 3 */
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modifier
+ ========================================================================== */
+body /deep/ .uk-close-alt {
+  padding: 2px;
+  border-radius: 50%;
+  background: #ffffff;
+  opacity: 1;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/* Hover */
+body /deep/ .uk-close-alt:hover,
+body /deep/ .uk-close-alt:focus {
+  opacity: 1;
+}
+/* Icon */
+body /deep/ .uk-close-alt:after {
+  opacity: 0.5;
+}
+body /deep/ .uk-close-alt:hover:after,
+body /deep/ .uk-close-alt:focus:after {
+  opacity: 0.8;
+}
+/* ========================================================================
+   Component: Badge
+ ========================================================================== */
+body /deep/ .uk-badge {
+  display: inline-block;
+  padding: 0 5px;
+  background: #00a8e6;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: none;
+  body /deep/ border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 2px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+/*
+ * Keep color when badge is a link
+ */
+body /deep/ a.uk-badge:hover {
+  color: #ffffff;
+}
+/* Modifier: `uk-badge-notification`;
+ ========================================================================== */
+body /deep/ .uk-badge-notification {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 18px;
+  border-radius: 500px;
+  font-size: 12px;
+  line-height: 18px;
+}
+/* Color modifier
+ ========================================================================== */
+/*
+ * Modifier: `uk-badge-success`
+ */
+body /deep/ .uk-badge-success {
+  background-color: #8cc14c;
+}
+/*
+ * Modifier: `uk-badge-warning`
+ */
+body /deep/ .uk-badge-warning {
+  background-color: #faa732;
+}
+/*
+ * Modifier: `uk-badge-danger`
+ */
+body /deep/ .uk-badge-danger {
+  background-color: #da314b;
+}
+/* ========================================================================
+   Component: Alert
+ ========================================================================== */
+body /deep/ .uk-alert {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #ebf7fd;
+  color: #2d7091;
+  body /deep/ border: 1px solid rgba(45, 112, 145, 0.3);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 #ffffff;
+}
+/*
+ * Add margin if adjacent element
+ */
+body /deep/ * + .uk-alert {
+  margin-top: 15px;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-alert > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Keep color for headings if the default heading color is changed
+ */
+body /deep/ .uk-alert h1,
+body /deep/ .uk-alert h2,
+body /deep/ .uk-alert h3,
+body /deep/ .uk-alert h4,
+body /deep/ .uk-alert h5,
+body /deep/ .uk-alert h6 {
+  color: inherit;
+}
+/* Close in alert
+ ========================================================================== */
+body /deep/ .uk-alert > .uk-close:first-child {
+  float: right;
+}
+/*
+ * Remove margin from adjacent element
+ */
+body /deep/ .uk-alert > .uk-close:first-child + * {
+  margin-top: 0;
+}
+/* Modifier: `uk-alert-success`
+ ========================================================================== */
+body /deep/ .uk-alert-success {
+  background: #f2fae3;
+  color: #659f13;
+  body /deep/ border-color: rgba(101, 159, 19, 0.3);
+}
+/* Modifier: `uk-alert-warning`
+ ========================================================================== */
+body /deep/ .uk-alert-warning {
+  background: #fffceb;
+  color: #e28327;
+  body /deep/ border-color: rgba(226, 131, 39, 0.3);
+}
+/* Modifier: `uk-alert-danger`
+ ========================================================================== */
+body /deep/ .uk-alert-danger {
+  background: #fff1f0;
+  color: #d85030;
+  body /deep/ border-color: rgba(216, 80, 48, 0.3);
+}
+/* Modifier: `uk-alert-large`
+ ========================================================================== */
+body /deep/ .uk-alert-large {
+  padding: 20px;
+}
+body /deep/ .uk-alert-large > .uk-close:first-child {
+  margin: -10px -10px 0 0;
+}
+/* ========================================================================
+   Component: Thumbnail
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Responsive behavior
+ * 3. Corrects `max-width` behavior sed
+ * 4. Required for `figure` element
+ * 5. Style
+ */
+body /deep/ .uk-thumbnail {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  max-width: 100%;
+  /* 3 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 3 */
+  margin: 0;
+  /* 4 */
+  padding: 4px;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  border-radius: 4px;
+}
+/*
+ * Hover state for `a` elements
+ * 1. Apply hover style also to focus state
+ * 2. Needed for caption
+ * 3. Remove default focus style
+ */
+body /deep/ a.uk-thumbnail:hover,
+body /deep/ a.uk-thumbnail:focus {
+  border-color: #aaaaaa;
+  background-color: #ffffff;
+  /* 2 */
+  text-decoration: none;
+  /* 3 */
+  outline: none;
+}
+/* Caption
+ ========================================================================== */
+body /deep/ .uk-thumbnail-caption {
+  padding-top: 4px;
+  text-align: center;
+  color: #444444;
+}
+/* Sizes
+ ========================================================================== */
+body /deep/ .uk-thumbnail-mini {
+  width: 150px;
+}
+body /deep/ .uk-thumbnail-small {
+  width: 200px;
+}
+body /deep/ .uk-thumbnail-medium {
+  width: 300px;
+}
+body /deep/ .uk-thumbnail-large {
+  width: 400px;
+}
+body /deep/ .uk-thumbnail-expand,
+body /deep/ .uk-thumbnail-expand > img {
+  width: 100%;
+}
+/* ========================================================================
+   Component: Overlay
+ ========================================================================== */
+/*
+ * 1. Container width fits its content
+ * 2. Create position context
+ * 3. Set max-width for responsive images to prevent `inline-block` consequences
+ * 4. Remove the gap between the container and its child element
+ * 5. Fixed wrong scaling calculation for images in Chrome
+ */
+body /deep/ .uk-overlay {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  max-width: 100%;
+  /* 4 */
+  vertical-align: middle;
+  /* 5 */
+  overflow: hidden;
+}
+/*
+ * Remove margin from content
+ */
+body /deep/ .uk-overlay > :first-child {
+  margin-bottom: 0;
+}
+/* Sub-object `uk-overlay-area`
+ ========================================================================== */
+/*
+ * 1. Set position
+ * 2. Set style
+ * 3. Fade-in transition
+ */
+body /deep/ .uk-overlay-area {
+  /* 1 */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* 2 */
+  background: rgba(0, 0, 0, 0.3);
+  /* 3 */
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  body /deep/ -webkit-transform: translate3d(0, 0, 0);
+}
+/*
+ * Hover
+ * 1. `uk-hover` to support touch devices
+ * 2. Use optional `uk-overlay-toggle` to trigger the overlay earlier
+ */
+body /deep/ .uk-overlay:hover .uk-overlay-area,
+body /deep/ .uk-overlay.uk-hover .uk-overlay-area,
+body /deep/ .uk-overlay-toggle:hover .uk-overlay-area,
+body /deep/ .uk-overlay-toggle.uk-hover .uk-overlay-area {
+  opacity: 1;
+}
+/*
+ * Icon
+ */
+body /deep/ .uk-overlay-area:empty:before {
+  content: "\f002";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+  font-size: 50px;
+  line-height: 1;
+  font-family: FontAwesome;
+  text-align: center;
+  color: #ffffff;
+}
+/* Sub-object `uk-overlay-area-content`
+ ========================================================================== */
+/*
+ * Remove whitespace between child elements when using `inline-block`
+ * Needed for Firefox
+ */
+body /deep/ .uk-overlay-area:not(:empty) {
+  font-size: 0.001px;
+}
+/*
+ * 1. Needed for vertical alignment
+ */
+body /deep/ .uk-overlay-area:not(:empty):before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/*
+ * 1. Set vertical alignment
+ * 2. Reset whitespace hack
+ * 3. Set horizontal alignment
+ * 4. Set style
+ */
+body /deep/ .uk-overlay-area-content {
+  /* 1 */
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  vertical-align: middle;
+  /* 2 */
+  font-size: 1rem;
+  /* 3 */
+  text-align: center;
+  /* 4 */
+  padding: 0 15px;
+  color: #ffffff;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-overlay-area-content > :last-child {
+  margin-bottom: 0;
+}
+/*
+ * Links in overlay area
+ */
+body /deep/ .uk-overlay-area-content a:not([class]),
+body /deep/ .uk-overlay-area-content a:not([class]):hover {
+  color: inherit;
+}
+/* DEPRECATED
+ * Sub-object `uk-overlay-caption`
+ ========================================================================== */
+/*
+ * 1. Set position
+ * 2. Set style
+ * 3. Fade-in transition
+ */
+body /deep/ .uk-overlay-caption {
+  /* 1 */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* 2 */
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  /* 3 */
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+  body /deep/ -webkit-transform: translate3d(0, 0, 0);
+}
+/*
+ * Hover
+ * 1. `uk-hover` to support touch devices
+ * 2. Use optional `uk-overlay-toggle` to trigger the overlay earlier
+ */
+body /deep/ .uk-overlay:hover .uk-overlay-caption,
+body /deep/ .uk-overlay.uk-hover .uk-overlay-caption,
+body /deep/ .uk-overlay-toggle:hover .uk-overlay-caption,
+body /deep/ .uk-overlay-toggle.uk-hover .uk-overlay-caption {
+  opacity: 1;
+}
+/* ========================================================================
+   Component: Progress
+ ========================================================================== */
+/*
+ * 1. Clearing
+ * 2. Vertical alignment if text is used
+ */
+body /deep/ .uk-progress {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 20px;
+  margin-bottom: 15px;
+  background: #f5f5f5;
+  /* 1 */
+  overflow: hidden;
+  /* 2 */
+  line-height: 20px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+/*
+ * Add margin if adjacent element
+ */
+body /deep/ * + .uk-progress {
+  margin-top: 15px;
+}
+/* Sub-object: `uk-progress-bar`
+ ========================================================================== */
+/*
+ * 1. Transition
+ * 2. Needed for text
+ */
+body /deep/ .uk-progress-bar {
+  width: 0;
+  height: 100%;
+  background: #00a8e6;
+  float: left;
+  /* 1 */
+  -webkit-transition: width 0.6s ease;
+  transition: width 0.6s ease;
+  /* 2 */
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+/* Size modifiers
+ ========================================================================== */
+/* Mini */
+body /deep/ .uk-progress-mini {
+  height: 6px;
+}
+/* Small */
+body /deep/ .uk-progress-small {
+  height: 12px;
+}
+/* Color modifiers
+ ========================================================================== */
+body /deep/ .uk-progress-success .uk-progress-bar {
+  background-color: #8cc14c;
+}
+body /deep/ .uk-progress-warning .uk-progress-bar {
+  background-color: #faa732;
+}
+body /deep/ .uk-progress-danger .uk-progress-bar {
+  background-color: #da314b;
+}
+/* Modifier: `uk-progress-striped`
+ ========================================================================== */
+body /deep/ .uk-progress-striped .uk-progress-bar {
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) body /deep/ 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(body /deep/ 255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, body /deep/ transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, body /deep/ 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 30px 30px;
+}
+/*
+ * Animation
+ */
+body /deep/ .uk-progress-striped.uk-active .uk-progress-bar {
+  -webkit-animation: uk-progress-bar-stripes 2s linear infinite;
+  animation: uk-progress-bar-stripes 2s linear infinite;
+}
+body /deep/ @-webkit-keyframes uk-progress-bar-stripes {
+  body /deep/ 0% {
+    background-position: 0 0;
+  }
+  body /deep/ 100% {
+    background-position: 30px 0;
+  }
+}
+body /deep/ @keyframes uk-progress-bar-stripes {
+  body /deep/ 0% {
+    background-position: 0 0;
+  }
+  body /deep/ 100% {
+    background-position: 30px 0;
+  }
+}
+/* Size modifiers
+     ========================================================================== */
+body /deep/ .uk-progress-mini,
+body /deep/ .uk-progress-small {
+  border-radius: 500px;
+}
+/* ========================================================================
+   Component: Animation
+ ========================================================================== */
+body /deep/ [class*='uk-animation-'] {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* Hide animated element if scrollspy is used */
+body /deep/ @media screen {
+  body /deep/ [data-uk-scrollspy*='uk-animation-'] {
+    opacity: 0;
+  }
+}
+/*
+ * Fade
+ * Higher specificity (!important) needed because of reverse modifier
+ */
+body /deep/ .uk-animation-fade {
+  -webkit-animation-name: uk-fade;
+  animation-name: uk-fade;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear !important;
+  animation-timing-function: linear !important;
+}
+/*
+ * Fade with scale
+ */
+body /deep/ .uk-animation-scale-up {
+  -webkit-animation-name: uk-fade-scale-02;
+  animation-name: uk-fade-scale-02;
+}
+body /deep/ .uk-animation-scale-down {
+  -webkit-animation-name: uk-fade-scale-18;
+  animation-name: uk-fade-scale-18;
+}
+/*
+ * Fade with slide
+ */
+body /deep/ .uk-animation-slide-top {
+  -webkit-animation-name: uk-fade-top;
+  animation-name: uk-fade-top;
+}
+body /deep/ .uk-animation-slide-bottom {
+  -webkit-animation-name: uk-fade-bottom;
+  animation-name: uk-fade-bottom;
+}
+body /deep/ .uk-animation-slide-left {
+  -webkit-animation-name: uk-fade-left;
+  animation-name: uk-fade-left;
+}
+body /deep/ .uk-animation-slide-right {
+  -webkit-animation-name: uk-fade-right;
+  animation-name: uk-fade-right;
+}
+/*
+ * Scale
+ */
+body /deep/ .uk-animation-scale {
+  -webkit-animation-name: uk-scale-12;
+  animation-name: uk-scale-12;
+}
+/*
+ * Shake
+ */
+body /deep/ .uk-animation-shake {
+  -webkit-animation-name: uk-shake;
+  animation-name: uk-shake;
+}
+/* Direction modifiers
+ ========================================================================== */
+body /deep/ .uk-animation-reverse {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+}
+/* Duration modifiers
+========================================================================== */
+body /deep/ .uk-animation-15 {
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+}
+/* Origin modifiers
+========================================================================== */
+body /deep/ .uk-animation-top-left {
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+body /deep/ .uk-animation-top-center {
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+body /deep/ .uk-animation-top-right {
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+body /deep/ .uk-animation-middle-left {
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+}
+body /deep/ .uk-animation-middle-right {
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
+body /deep/ .uk-animation-bottom-left {
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+body /deep/ .uk-animation-bottom-center {
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+body /deep/ .uk-animation-bottom-right {
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+/* Sub-object: `uk-animation-hover`
+========================================================================== */
+/*
+ * Enable animation only on hover
+ * Needed for Firefox because animations are not triggered when switching between display `hidden` and `block`
+ */
+body /deep/ .uk-animation-hover:not(:hover),
+body /deep/ .uk-animation-hover:not(:hover) [class*='uk-animation-'],
+body /deep/ .uk-touch .uk-animation-hover:not(.uk-hover),
+body /deep/ .uk-touch .uk-animation-hover:not(.uk-hover) [class*='uk-animation-'] {
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+/* Keyframes: Fade
+ body /deep/ * Used by dropdown, datepicker and slideshow component
+ ========================================================================== */
+body /deep/ @-webkit-keyframes uk-fade {
+  body /deep/ 0% {
+    opacity: 0;
+  }
+  body /deep/ 100% {
+    opacity: 1;
+  }
+}
+body /deep/ @keyframes uk-fade {
+  body /deep/ 0% {
+    opacity: 0;
+  }
+  body /deep/ 100% {
+    opacity: 1;
+  }
+}
+/* Keyframes: Fade with slide
+ ========================================================================== */
+/*
+ * Top
+ */
+body /deep/ @-webkit-keyframes uk-fade-top {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+body /deep/ @keyframes uk-fade-top {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Bottom
+ */
+body /deep/ @-webkit-keyframes uk-fade-bottom {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+body /deep/ @keyframes uk-fade-bottom {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Left
+ */
+body /deep/ @-webkit-keyframes uk-fade-left {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-fade-left {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/*
+ * Right
+ */
+body /deep/ @-webkit-keyframes uk-fade-right {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-fade-right {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Keyframes: Fade with scale
+ ========================================================================== */
+/*
+ * Scale by 0.2
+ */
+body /deep/ @-webkit-keyframes uk-fade-scale-02 {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+body /deep/ @keyframes uk-fade-scale-02 {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Scale by 1.5
+ * Used by slideshow component
+ */
+body /deep/ @-webkit-keyframes uk-fade-scale-15 {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+body /deep/ @keyframes uk-fade-scale-15 {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*
+ * Scale by 1.8
+ */
+body /deep/ @-webkit-keyframes uk-fade-scale-18 {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: scale(1.8);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+body /deep/ @keyframes uk-fade-scale-18 {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Keyframes: Slide
+ * Used by slideshow component
+ ========================================================================== */
+/*
+ * Left
+ */
+body /deep/ @-webkit-keyframes uk-slide-left {
+  body /deep/ 0% {
+    -webkit-transform: translateX(-100%);
+  }
+  body /deep/ 100% {
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-slide-left {
+  body /deep/ 0% {
+    transform: translateX(-100%);
+  }
+  body /deep/ 100% {
+    transform: translateX(0);
+  }
+}
+/*
+ * Right
+ */
+body /deep/ @-webkit-keyframes uk-slide-right {
+  body /deep/ 0% {
+    -webkit-transform: translateX(100%);
+  }
+  body /deep/ 100% {
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-slide-right {
+  body /deep/ 0% {
+    transform: translateX(100%);
+  }
+  body /deep/ 100% {
+    transform: translateX(0);
+  }
+}
+/*
+ * Left third
+ */
+body /deep/ @-webkit-keyframes uk-slide-left-33 {
+  body /deep/ 0% {
+    -webkit-transform: translateX(33%);
+  }
+  body /deep/ 100% {
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-slide-left-33 {
+  body /deep/ 0% {
+    transform: translateX(33%);
+  }
+  body /deep/ 100% {
+    transform: translateX(0);
+  }
+}
+/*
+ * Right third
+ */
+body /deep/ @-webkit-keyframes uk-slide-right-33 {
+  body /deep/ 0% {
+    -webkit-transform: translateX(-33%);
+  }
+  body /deep/ 100% {
+    -webkit-transform: translateX(0);
+  }
+}
+body /deep/ @keyframes uk-slide-right-33 {
+  body /deep/ 0% {
+    transform: translateX(-33%);
+  }
+  body /deep/ 100% {
+    transform: translateX(0);
+  }
+}
+/* Keyframes: Scale
+ ========================================================================== */
+body /deep/ @-webkit-keyframes uk-scale-12 {
+  body /deep/ 0% {
+    -webkit-transform: scale(1.2);
+  }
+  body /deep/ 100% {
+    -webkit-transform: scale(1);
+  }
+}
+body /deep/ @keyframes uk-scale-12 {
+  body /deep/ 0% {
+    transform: scale(1.2);
+  }
+  body /deep/ 100% {
+    transform: scale(1);
+  }
+}
+/* Keyframes: Rotate
+ * Used by icon component
+ ========================================================================== */
+body /deep/ @-webkit-keyframes uk-rotate {
+  body /deep/ 0% {
+    -webkit-transform: rotate(0deg);
+  }
+  body /deep/ 100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+body /deep/ @keyframes uk-rotate {
+  body /deep/ 0% {
+    transform: rotate(0deg);
+  }
+  body /deep/ 100% {
+    transform: rotate(359deg);
+  }
+}
+/* Keyframes: Shake
+ ========================================================================== */
+body /deep/ @-webkit-keyframes uk-shake {
+  body /deep/ 0%,
+  body /deep/ 100% {
+    -webkit-transform: translateX(0);
+  }
+  body /deep/ 10% {
+    -webkit-transform: translateX(-9px);
+  }
+  body /deep/ 20% {
+    -webkit-transform: translateX(8px);
+  }
+  body /deep/ 30% {
+    -webkit-transform: translateX(-7px);
+  }
+  body /deep/ 40% {
+    -webkit-transform: translateX(6px);
+  }
+  body /deep/ 50% {
+    -webkit-transform: translateX(-5px);
+  }
+  body /deep/ 60% {
+    -webkit-transform: translateX(4px);
+  }
+  body /deep/ 70% {
+    -webkit-transform: translateX(-3px);
+  }
+  body /deep/ 80% {
+    -webkit-transform: translateX(2px);
+  }
+  body /deep/ 90% {
+    -webkit-transform: translateX(-1px);
+  }
+}
+body /deep/ @keyframes uk-shake {
+  body /deep/ 0%,
+  body /deep/ 100% {
+    transform: translateX(0);
+  }
+  body /deep/ 10% {
+    transform: translateX(-9px);
+  }
+  body /deep/ 20% {
+    transform: translateX(8px);
+  }
+  body /deep/ 30% {
+    transform: translateX(-7px);
+  }
+  body /deep/ 40% {
+    transform: translateX(6px);
+  }
+  body /deep/ 50% {
+    transform: translateX(-5px);
+  }
+  body /deep/ 60% {
+    transform: translateX(4px);
+  }
+  body /deep/ 70% {
+    transform: translateX(-3px);
+  }
+  body /deep/ 80% {
+    transform: translateX(2px);
+  }
+  body /deep/ 90% {
+    transform: translateX(-1px);
+  }
+}
+/* Keyframes: Fade with slide fixed
+ * Used by dropdown and search component
+ ========================================================================== */
+/*
+ * Top fixed
+ */
+body /deep/ @-webkit-keyframes uk-slide-top-fixed {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+body /deep/ @keyframes uk-slide-top-fixed {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*
+ * Bottom fixed
+ */
+body /deep/ @-webkit-keyframes uk-slide-bottom-fixed {
+  body /deep/ 0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+body /deep/ @keyframes uk-slide-bottom-fixed {
+  body /deep/ 0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  body /deep/ 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ========================================================================
+   Component: Dropdown
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Box-sizing is needed for `uk-dropdown-justify`
+ * 4. Set style
+ * 5. Reset button group whitespace hack
+ */
+body /deep/ .uk-dropdown {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1020;
+  /* 3 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 4 */
+  width: 200px;
+  margin-top: 5px;
+  padding: 15px;
+  background: #ffffff;
+  color: #444444;
+  /* 5 */
+  font-size: 1rem;
+  vertical-align: top;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+/*
+ * 1. Show dropdown
+ * 2. Set animation
+ * 3. Needed for scale animation
+ */
+body /deep/ .uk-open > .uk-dropdown {
+  /* 1 */
+  display: block;
+  /* 2 */
+  -webkit-animation: uk-fade 0.2s ease-in-out;
+  animation: uk-fade 0.2s ease-in-out;
+  /* 3 */
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+/* Alignment modifiers
+ ========================================================================== */
+/*
+ * Modifier `uk-dropdown-flip`
+ */
+body /deep/ .uk-dropdown-flip {
+  left: auto;
+  right: 0;
+}
+/*
+ * Modifier `uk-dropdown-up`
+ */
+body /deep/ .uk-dropdown-up {
+  top: auto;
+  bottom: 100%;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+/* Nav in dropdown
+ ========================================================================== */
+body /deep/ .uk-dropdown .uk-nav {
+  margin: 0 -15px;
+}
+/* Grid and panel in dropdown
+ ========================================================================== */
+/*
+* Vertical gutter
+*/
+/*
+ * Grid
+ * Higher specificity to override large gutter
+ */
+body /deep/ .uk-grid .uk-dropdown-grid + .uk-dropdown-grid {
+  margin-top: 15px;
+}
+/* Panels */
+body /deep/ .uk-dropdown-grid > [class*='uk-width-'] > .uk-panel + .uk-panel {
+  margin-top: 15px;
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  /*
+     * Horizontal gutter
+     */
+  body /deep/ .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-body /deep/ '] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*
+     * Column divider
+     */
+  .uk-dropdown:not(.uk-dropdown-stack) > .uk-dropdown-grid > [class*='uk-width-body /deep/ ']:nth-child(n+2) {
+    border-left: 1px solid #dddddd;
+  }
+  /*
+     * Width multiplier for dropdown columns
+     */
+  body /deep/ .uk-dropdown-width-2:not(.uk-dropdown-stack) {
+    width: 400px;
+  }
+  body /deep/ .uk-dropdown-width-3:not(.uk-dropdown-stack) {
+    width: 600px;
+  }
+  body /deep/ .uk-dropdown-width-4:not(.uk-dropdown-stack) {
+    width: 800px;
+  }
+  body /deep/ .uk-dropdown-width-5:not(.uk-dropdown-stack) {
+    width: 1000px;
+  }
+}
+/* Phone landscape and smaller */
+body /deep/ @media (max-width: 767px) {
+  /*
+     * Stack columns and take full width
+     */
+  body /deep/ .uk-dropdown-grid > [class*='uk-width-'] {
+    width: 100%;
+  }
+  /*
+     * Vertical gutter
+     */
+  body /deep/ .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+    margin-top: 15px;
+  }
+}
+/*
+* Stack grid columns
+*/
+body /deep/ .uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-'] {
+  width: 100%;
+}
+body /deep/ .uk-dropdown-stack > .uk-dropdown-grid > [class*='uk-width-']:nth-child(n+2) {
+  margin-top: 15px;
+}
+/* Modifier `uk-dropdown-small`
+ ========================================================================== */
+/*
+ * Set min-width and text expands dropdown if needed
+ */
+body /deep/ .uk-dropdown-small {
+  min-width: 150px;
+  width: auto;
+  padding: 5px;
+  white-space: nowrap;
+}
+/*
+ * Nav in dropdown
+ */
+body /deep/ .uk-dropdown-small .uk-nav {
+  margin: 0 -5px;
+}
+/* Modifier: `uk-dropdown-navbar`
+ ========================================================================== */
+body /deep/ .uk-dropdown-navbar {
+  margin-top: 6px;
+  background: #ffffff;
+  color: #444444;
+  left: -1px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+body /deep/ .uk-open > .uk-dropdown-navbar {
+  -webkit-animation: uk-slide-top-fixed 0.2s ease-in-out;
+  animation: uk-slide-top-fixed 0.2s ease-in-out;
+}
+/* Modifier `uk-dropdown-scrollable`
+ ========================================================================== */
+/*
+ * Usefull for long lists
+ */
+body /deep/ .uk-dropdown-scrollable {
+  overflow-y: auto;
+  max-height: 200px;
+}
+body /deep/ .uk-dropdown-navbar.uk-dropdown-flip {
+  left: auto;
+}
+/* ========================================================================
+   Component: Modal
+ ========================================================================== */
+/*
+ * This is the modal overlay and modal dialog container
+ * 1. Hide by default
+ * 2. Set fixed position
+ * 3. Allow scrolling for the modal dialog
+ * 4. Mask the background page
+ * 5. Fade-in transition
+ */
+body /deep/ .uk-modal {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1010;
+  /* 3 */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* 4 */
+  background: rgba(0, 0, 0, 0.6);
+  /* 5 */
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+/*
+ * Open state
+ */
+body /deep/ .uk-modal.uk-open {
+  opacity: 1;
+}
+/*
+ * Prevents duplicated scrollbar caused by 4.
+ */
+body /deep/ .uk-modal-page,
+body /deep/ .uk-modal-page body {
+  overflow: hidden;
+}
+/* Sub-object: `uk-modal-dialog`
+ ========================================================================== */
+/*
+ body /deep/ * 1. Create position context for caption, spinner and close button
+ * 2. Set box sizing
+ * 3. Min-height needed for initial loading and spinner
+ * 4. Set style
+ * 5. Slide-in transition
+ */
+body /deep/ .uk-modal-dialog {
+  /* 1 */
+  position: relative;
+  /* 2 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 50px auto;
+  padding: 20px;
+  width: 600px;
+  max-width: 100%;
+  max-width: calc(100% - 20px);
+  /* 3 */
+  min-height: 200px;
+  /* 4 */
+  background: #ffffff;
+  /* 5 */
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  body /deep/ -webkit-transition: opacity 0.3s linear, -webkit-transform 0.3s ease-out;
+  body /deep/ transition: opacity 0.3s linear, transform 0.3s ease-out;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* Phone landscape and smaller */
+body /deep/ @media (max-width: 767px) {
+  /*
+     * Fit in small screen
+     */
+  body /deep/ .uk-modal-dialog {
+    width: auto;
+    margin: 10px auto;
+  }
+}
+/*
+ * Open state
+ */
+body /deep/ .uk-open .uk-modal-dialog {
+  /* 4 */
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-modal-dialog > :not([class*='uk-modal-']):last-child {
+  margin-bottom: 0;
+}
+/* Close in modal
+ ========================================================================== */
+body /deep/ .uk-modal-dialog > .uk-close:first-child {
+  margin: -10px -10px 0 0;
+  float: right;
+}
+/*
+ * Remove margin from adjacent element
+ */
+body /deep/ .uk-modal-dialog > .uk-close:first-child + *:not([class*='uk-modal-']) {
+  margin-top: 0;
+}
+/* Modifier: `uk-modal-dialog-lightbox`
+ ========================================================================== */
+body /deep/ .uk-modal-dialog-lightbox {
+  margin: 15px auto;
+  padding: 0;
+  max-width: 95%;
+  max-width: calc(100% - 30px);
+  border-radius: 0;
+}
+/*
+ * Close button
+ */
+body /deep/ .uk-modal-dialog-lightbox > .uk-close:first-child {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  margin: 0;
+  float: none;
+}
+/* Phone landscape and smaller */
+body /deep/ @media (max-width: 767px) {
+  body /deep/ .uk-modal-dialog-lightbox > .uk-close:first-child {
+    top: -7px;
+    right: -7px;
+  }
+}
+/* Modifier: `uk-modal-dialog-large`
+ ========================================================================== */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-modal-dialog-large {
+    width: 930px;
+  }
+}
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  body /deep/ .uk-modal-dialog-large {
+    width: 1130px;
+  }
+}
+/* Sub-Object: `uk-modal-header` and `uk-modal-footer`
+ ========================================================================== */
+body /deep/ .uk-modal-header {
+  margin-bottom: 15px;
+  margin: -20px -20px 15px -20px;
+  padding: 20px;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+  background: #fafafa;
+}
+body /deep/ .uk-modal-footer {
+  margin-top: 15px;
+  margin: 15px -20px -20px -20px;
+  padding: 20px;
+  border-top: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+  background: #fafafa;
+}
+/*
+ * Remove margin from the last-child
+ */
+body /deep/ .uk-modal-header > :last-child,
+body /deep/ .uk-modal-footer > :last-child {
+  margin-bottom: 0;
+}
+/* Sub-Object: `uk-modal-caption`
+ ========================================================================== */
+body /deep/ .uk-modal-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  margin-bottom: -10px;
+  color: #ffffff;
+  text-align: center;
+}
+/* Sub-Object: `uk-modal-spinner`
+ ========================================================================== */
+body /deep/ .uk-modal-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  body /deep/ -webkit-transform: translate(-50%, -50%);
+  body /deep/ transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #ddd;
+}
+body /deep/ .uk-modal-spinner:after {
+  content: "\f110";
+  font-family: FontAwesome;
+  -webkit-animation: uk-rotate 2s infinite linear;
+  animation: uk-rotate 2s infinite linear;
+}
+/* ========================================================================
+   Component: Off-canvas
+ ========================================================================== */
+/*
+ * This is the offcanvas overlay and bar container
+ * 1. Hide by default
+ * 2. Set fixed position
+ * 3. Deactivate browser touch actions in IE11
+ * 4. Mask the background page
+ */
+body /deep/ .uk-offcanvas {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  /* 3 */
+  touch-action: none;
+  /* 4 */
+  background: rgba(0, 0, 0, 0.1);
+}
+body /deep/ .uk-offcanvas.uk-active {
+  display: block;
+}
+/* Sub-object `uk-offcanvas-page`
+ ========================================================================== */
+/*
+ * Prepares the whole HTML page to slide-out
+ * 1. Fix the main page and disallow scrolling
+ * 2. Side-out transition
+ */
+body /deep/ .uk-offcanvas-page {
+  /* 1 */
+  position: fixed;
+  /* 2 */
+  -webkit-transition: margin-left 0.3s ease-in-out;
+  transition: margin-left 0.3s ease-in-out;
+}
+/* Sub-object `uk-offcanvas-bar`
+ ========================================================================== */
+/*
+ * This is the offcanvas bar
+ * 1. Set fixed position
+ * 2. Size and style
+ * 3. Allow scrolling
+ * 4. Side-out transition
+ * 5. Deavtivate scroll chaining in IE11
+ */
+body /deep/ .uk-offcanvas-bar {
+  /* 1 */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: 1001;
+  /* 2 */
+  width: 270px;
+  max-width: 100%;
+  background: #333333;
+  /* 3 */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* 4 */
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  /* 5 */
+  -ms-scroll-chaining: none;
+}
+body /deep/ .uk-offcanvas.uk-active .uk-offcanvas-bar.uk-offcanvas-bar-show {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* Modifier `uk-offcanvas-bar-flip`
+ ========================================================================== */
+body /deep/ .uk-offcanvas-bar-flip {
+  left: auto;
+  right: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* Panel in offcanvas
+ ========================================================================== */
+body /deep/ .uk-offcanvas .uk-panel {
+  margin: 20px 15px;
+  color: #777777;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+body /deep/ .uk-offcanvas .uk-panel-title {
+  color: #cccccc;
+}
+body /deep/ .uk-offcanvas .uk-panel a:not([class]) {
+  color: #cccccc;
+}
+body /deep/ .uk-offcanvas .uk-panel a:not([class]):hover {
+  color: #ffffff;
+}
+body /deep/ .uk-offcanvas-bar:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+body /deep/ .uk-offcanvas-bar-flip:after {
+  right: auto;
+  left: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+}
+/* ========================================================================
+   Component: Switcher
+ ========================================================================== */
+body /deep/ .uk-switcher {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Items
+ */
+body /deep/ .uk-switcher > *:not(.uk-active) {
+  display: none;
+}
+/* ========================================================================
+   Component: Tooltip
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set fixed position
+ * 3. Set dimensions
+ * 4. Set style
+ */
+body /deep/ .uk-tooltip {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  z-index: 1030;
+  /* 3 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 200px;
+  padding: 5px 8px;
+  /* 4 */
+  background: #333333;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+/* Triangle
+ ========================================================================== */
+/*
+ * 1. Dashed is less antialised than solid
+ */
+body /deep/ .uk-tooltip:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  /* 1 */
+  border: 5px dashed #333333;
+}
+/* Direction modifiers
+ ========================================================================== */
+/*
+ * Top
+ */
+body /deep/ .uk-tooltip-top:after,
+body /deep/ .uk-tooltip-top-left:after,
+body /deep/ .uk-tooltip-top-right:after {
+  bottom: -5px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #333333;
+}
+/*
+ * Bottom
+ */
+body /deep/ .uk-tooltip-bottom:after,
+body /deep/ .uk-tooltip-bottom-left:after,
+body /deep/ .uk-tooltip-bottom-right:after {
+  top: -5px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #333333;
+}
+/*
+ * Top/Bottom center
+ */
+body /deep/ .uk-tooltip-top:after,
+body /deep/ .uk-tooltip-bottom:after {
+  left: 50%;
+  margin-left: -5px;
+}
+/*
+ * Top/Bottom left
+ */
+body /deep/ .uk-tooltip-top-left:after,
+body /deep/ .uk-tooltip-bottom-left:after {
+  left: 10px;
+}
+/*
+ * Top/Bottom right
+ */
+body /deep/ .uk-tooltip-top-right:after,
+body /deep/ .uk-tooltip-bottom-right:after {
+  right: 10px;
+}
+/*
+ * Left
+ */
+body /deep/ .uk-tooltip-left:after {
+  right: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-left-style: solid;
+  border-right: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: #333333;
+}
+/*
+ * Right
+ */
+body /deep/ .uk-tooltip-right:after {
+  left: -5px;
+  top: 50%;
+  margin-top: -5px;
+  border-right-style: solid;
+  border-left: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: #333333;
+}
+/* ========================================================================
+   Component: Text
+ ========================================================================== */
+/* Size modifiers
+ ========================================================================== */
+body /deep/ .uk-text-small {
+  font-size: 11px;
+  line-height: 16px;
+}
+body /deep/ .uk-text-large {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+/* Weight modifiers
+ ========================================================================== */
+body /deep/ .uk-text-bold {
+  font-weight: bold;
+}
+/* Color modifiers
+ ========================================================================== */
+body /deep/ .uk-text-muted {
+  color: #999999 !important;
+}
+body /deep/ .uk-text-primary {
+  color: #2d7091 !important;
+}
+body /deep/ .uk-text-success {
+  color: #659f13 !important;
+}
+body /deep/ .uk-text-warning {
+  color: #e28327 !important;
+}
+body /deep/ .uk-text-danger {
+  color: #d85030 !important;
+}
+body /deep/ .uk-text-contrast {
+  color: #ffffff !important;
+}
+/* Alignment modifiers
+ ========================================================================== */
+body /deep/ .uk-text-left {
+  text-align: left !important;
+}
+body /deep/ .uk-text-right {
+  text-align: right !important;
+}
+body /deep/ .uk-text-center {
+  text-align: center !important;
+}
+body /deep/ .uk-text-justify {
+  text-align: justify !important;
+}
+body /deep/ .uk-text-top {
+  vertical-align: top !important;
+}
+body /deep/ .uk-text-middle {
+  vertical-align: middle !important;
+}
+body /deep/ .uk-text-bottom {
+  vertical-align: bottom !important;
+}
+/* Only tablets portrait and smaller */
+body /deep/ @media (max-width: 959px) {
+  body /deep/ .uk-text-center-medium {
+    text-align: center !important;
+  }
+  body /deep/ .uk-text-left-medium {
+    text-align: left !important;
+  }
+}
+/* Phone landscape and smaller */
+body /deep/ @media (max-width: 767px) {
+  body /deep/ .uk-text-center-small {
+    text-align: center !important;
+  }
+  body /deep/ .uk-text-left-small {
+    text-align: left !important;
+  }
+}
+/* Wrap modifiers
+ ========================================================================== */
+/*
+ * Prevent text from wrapping onto multiple lines
+ */
+body /deep/ .uk-text-nowrap {
+  white-space: nowrap;
+}
+/*
+ body /deep/ * Prevent text from wrapping onto multiple lines, and truncate with an ellipsis
+ */
+body /deep/ .uk-text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*
+ * Break strings if their length exceeds the width of their container
+ */
+body /deep/ .uk-text-break {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+/* ========================================================================
+   Component: Utility
+ ========================================================================== */
+/* Container
+ ========================================================================== */
+body /deep/ .uk-container {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 980px;
+  padding: 0 25px;
+}
+/* Large screen and bigger */
+body /deep/ @media (min-width: 1220px) {
+  body /deep/ .uk-container {
+    max-width: 1200px;
+    padding: 0 35px;
+  }
+}
+/*
+ * Micro clearfix
+ */
+body /deep/ .uk-container:before,
+body /deep/ .uk-container:after {
+  content: "";
+  display: table;
+}
+body /deep/ .uk-container:after {
+  clear: both;
+}
+/*
+ * Center container
+ */
+body /deep/ .uk-container-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Clearing
+ ========================================================================== */
+/*
+ * Micro clearfix
+* `table-cell` is used with `:before` because `table` creates a 1px gap when body /deep/ it becomes a flex item, only in Webkit
+ * `table` is used again with `:after` because `clear` only works with block elements.
+ * Note: `display: block` with `overflow: hidden` is currently not working in the latest Safari
+ */
+body /deep/ .uk-clearfix:before {
+  content: "";
+  display: table-cell;
+}
+body /deep/ .uk-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+ *  Create a new block formatting context
+ */
+body /deep/ .uk-nbfc {
+  overflow: hidden;
+}
+body /deep/ .uk-nbfc-alt {
+  display: table-cell;
+  width: 10000px;
+}
+/* Alignment of block elements
+ ========================================================================== */
+/*
+ * Float blocks
+ * 1. Prevent content overflow on small devices
+ */
+body /deep/ .uk-float-left {
+  float: left;
+}
+body /deep/ .uk-float-right {
+  float: right;
+}
+/* 1 */
+body /deep/ [class*='uk-float-'] {
+  max-width: 100%;
+}
+/* Alignment of images and objects
+ ========================================================================== */
+/*
+ * Alignment
+ */
+body /deep/ [class*='uk-align-'] {
+  display: block;
+  margin-bottom: 15px;
+}
+body /deep/ .uk-align-left {
+  margin-right: 15px;
+  float: left;
+}
+body /deep/ .uk-align-right {
+  margin-left: 15px;
+  float: right;
+}
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-align-medium-left {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left;
+  }
+  body /deep/ .uk-align-medium-right {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    float: right;
+  }
+}
+body /deep/ .uk-align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Vertical alignment
+ ========================================================================== */
+/*
+ * Remove whitespace between child elements when using `inline-block`
+ */
+body /deep/ .uk-vertical-align {
+  font-size: 0.001px;
+}
+/*
+ *  The `uk-vertical-align` container needs a specific height
+ */
+body /deep/ .uk-vertical-align:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/*
+ * Sub-object which can have any height
+ * 1. Reset whitespace hack
+ */
+body /deep/ .uk-vertical-align-middle,
+body /deep/ .uk-vertical-align-bottom {
+  display: inline-block;
+  max-width: 100%;
+  /* 1 */
+  font-size: 1rem;
+}
+body /deep/ .uk-vertical-align-middle {
+  vertical-align: middle;
+}
+body /deep/ .uk-vertical-align-bottom {
+  vertical-align: bottom;
+}
+/* Height
+ ========================================================================== */
+/*
+ * More robust if padding and border are used
+ */
+body /deep/ [class*='uk-height'] {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Useful to extend the `html` and `body` element to the full height of the page.
+ */
+body /deep/ .uk-height-1-1 {
+  height: 100%;
+}
+/*
+ * Useful to create image teasers
+ */
+body /deep/ .uk-height-viewport {
+  height: 100vh;
+  min-height: 600px;
+}
+/* Responsive objects
+ body /deep/ * Note: Images are already responsive by default, see Base component
+ ========================================================================== */
+/*
+ * 1. Corrects `max-width` and `max-height` behavior if padding and border are used
+ */
+body /deep/ .uk-responsive-width,
+body /deep/ .uk-responsive-height {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsiveness: Sets a maximum width relative to the parent and auto scales the height
+ * `important` needed to override `uk-img-preserve img`
+ */
+body /deep/ .uk-responsive-width {
+  max-width: 100% !important;
+  height: auto;
+}
+/*
+ * Responsiveness: Sets a maximum height relative to the parent and auto scales the width
+ * Only works if the parent element has a fixed height.
+ */
+body /deep/ .uk-responsive-height {
+  max-height: 100%;
+  width: auto;
+}
+/* Margin
+ ========================================================================== */
+/*
+ * Create a block with the same margin of a paragraph
+ * Add margin if adjacent element
+ */
+body /deep/ .uk-margin {
+  margin-bottom: 15px;
+}
+body /deep/ * + .uk-margin {
+  margin-top: 15px;
+}
+body /deep/ .uk-margin-top {
+  margin-top: 15px !important;
+}
+body /deep/ .uk-margin-bottom {
+  margin-bottom: 15px !important;
+}
+body /deep/ .uk-margin-left {
+  margin-left: 15px !important;
+}
+body /deep/ .uk-margin-right {
+  margin-right: 15px !important;
+}
+/*
+ * Larger margins
+ */
+body /deep/ .uk-margin-large {
+  margin-bottom: 50px;
+}
+body /deep/ * + .uk-margin-large {
+  margin-top: 50px;
+}
+body /deep/ .uk-margin-large-top {
+  margin-top: 50px !important;
+}
+body /deep/ .uk-margin-large-bottom {
+  margin-bottom: 50px !important;
+}
+body /deep/ .uk-margin-large-left {
+  margin-left: 50px !important;
+}
+body /deep/ .uk-margin-large-right {
+  margin-right: 50px !important;
+}
+/*
+ * Smaller margins
+ */
+body /deep/ .uk-margin-small {
+  margin-bottom: 5px;
+}
+body /deep/ * + .uk-margin-small {
+  margin-top: 5px;
+}
+body /deep/ .uk-margin-small-top {
+  margin-top: 5px !important;
+}
+body /deep/ .uk-margin-small-bottom {
+  margin-bottom: 5px !important;
+}
+body /deep/ .uk-margin-small-left {
+  margin-left: 5px !important;
+}
+body /deep/ .uk-margin-small-right {
+  margin-right: 5px !important;
+}
+/*
+ * Remove margins
+ */
+body /deep/ .uk-margin-remove {
+  margin: 0 !important;
+}
+body /deep/ .uk-margin-top-remove {
+  margin-top: 0 !important;
+}
+body /deep/ .uk-margin-bottom-remove {
+  margin-bottom: 0 !important;
+}
+/* Border
+ ========================================================================== */
+body /deep/ .uk-border-circle {
+  border-radius: 50%;
+}
+body /deep/ .uk-border-rounded {
+  border-radius: 5px;
+}
+/* Headings
+ ========================================================================== */
+/* Tablet and bigger */
+body /deep/ @media (min-width: 768px) {
+  body /deep/ .uk-heading-large {
+    font-size: 52px;
+    line-height: 64px;
+  }
+}
+/* Link
+ ========================================================================== */
+/*
+ * Let links appear in default text color
+ */
+body /deep/ .uk-link-muted,
+body /deep/ .uk-link-muted a {
+  color: #444444;
+}
+body /deep/ .uk-link-muted:hover,
+body /deep/ .uk-link-muted a:hover {
+  color: #444444;
+}
+/*
+ * Reset link style
+ */
+body /deep/ .uk-link-reset,
+body /deep/ .uk-link-reset a,
+body /deep/ .uk-link-reset:hover,
+body /deep/ .uk-link-reset a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+/* Scrollable
+ ========================================================================== */
+/*
+ * Enable scrolling for preformatted text
+ */
+body /deep/ .uk-scrollable-text {
+  height: 300px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  resize: both;
+}
+/*
+ * Box with scrolling enabled
+ */
+body /deep/ .uk-scrollable-box {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 170px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  resize: both;
+  border-radius: 3px;
+}
+body /deep/ .uk-scrollable-box > :last-child {
+  margin-bottom: 0;
+}
+/* Overflow
+ ========================================================================== */
+/*
+ * Enable scrollbars if content is clipped
+ */
+body /deep/ .uk-overflow-container {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+body /deep/ .uk-overflow-container > :last-child {
+  margin-bottom: 0;
+}
+/* Position
+ ========================================================================== */
+body /deep/ .uk-position-top,
+body /deep/ .uk-position-bottom {
+  position: absolute !important;
+  width: 100%;
+}
+body /deep/ .uk-position-top {
+  top: 0;
+}
+body /deep/ .uk-position-bottom {
+  bottom: 0;
+}
+body /deep/ .uk-position-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+body /deep/ .uk-position-relative {
+  position: relative !important;
+}
+/* Display
+ ========================================================================== */
+/*
+ * Display
+ */
+body /deep/ .uk-display-block {
+  display: block !important;
+}
+body /deep/ .uk-display-inline {
+  display: inline !important;
+}
+body /deep/ .uk-display-inline-block {
+  display: inline-block !important;
+}
+/*
+ * Visibility
+ * Avoids setting display to `block` so it works also with `inline-block` and `table`
+ */
+/* Desktop and bigger */
+body /deep/ @media (min-width: 960px) {
+  body /deep/ .uk-visible-small {
+    display: none !important;
+  }
+  body /deep/ .uk-visible-medium {
+    display: none !important;
+  }
+  body /deep/ .uk-hidden-large {
+    display: none !important;
+  }
+}
+/* Tablets portrait */
+body /deep/ @media (min-width: 768px) and (max-width: 959px) {
+  body /deep/ .uk-visible-small {
+    display: none !important;
+  }
+  body /deep/ .uk-visible-large {
+    display: none !important ;
+  }
+  body /deep/ .uk-hidden-medium {
+    display: none !important;
+  }
+}
+/* Phone landscape and smaller*/
+body /deep/ @media (max-width: 767px) {
+  body /deep/ .uk-visible-medium {
+    display: none !important;
+  }
+  body /deep/ .uk-visible-large {
+    display: none !important;
+  }
+  body /deep/ .uk-hidden-small {
+    display: none !important;
+  }
+}
+/* Remove from the flow and screen readers on any device */
+body /deep/ .uk-hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+body /deep/ /* It's hidden, but still affects layout */
+body /deep/ .uk-invisible {
+  visibility: hidden !important;
+}
+/* Show on hover */
+body /deep/ .uk-visible-hover:hover .uk-hidden,
+body /deep/ .uk-visible-hover:hover .uk-invisible {
+  display: block !important;
+  visibility: visible !important;
+}
+body /deep/ .uk-visible-hover-inline:hover .uk-hidden,
+body /deep/ .uk-visible-hover-inline:hover .uk-invisible {
+  display: inline-block !important;
+  visibility: visible !important;
+}
+/* Hide on touch */
+body /deep/ .uk-touch .uk-hidden-touch,
+body /deep/ .uk-notouch .uk-hidden-notouch {
+  display: none !important;
+}
+/* ========================================================================
+   Component: Print
+ ========================================================================== */
+body /deep/ @media print {
+  body /deep/ * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  body /deep/ a,
+  body /deep/ a:visited {
+    text-decoration: underline;
+  }
+  body /deep/ pre,
+  body /deep/ blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  body /deep/ thead {
+    display: table-header-group;
+  }
+  body /deep/ tr,
+  body /deep/ img {
+    page-break-inside: avoid;
+  }
+  body /deep/ img {
+    max-width: 100% !important;
+  }
+  body /deep/ @page {
+    margin: 0.5cm;
+  }
+  body /deep/ p,
+  body /deep/ h2,
+  body /deep/ h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  body /deep/ h2,
+  body /deep/ h3 {
+    page-break-after: avoid;
+  }
+}
