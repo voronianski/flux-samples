@@ -1,0 +1,13 @@
+body /deep/ products-container {
+    display: block;
+    max-width: 900px;
+    width: 60%;
+    margin: 20px 25px;
+}
+
+body /deep/ cart-container {
+    display: block;
+    position: fixed;
+    right: 50px;
+    top: 30px;
+}
