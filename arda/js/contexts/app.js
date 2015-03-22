@@ -1,9 +1,10 @@
 import Arda from 'arda'
 import AppComponent from '../components/App.jsx'
+import subscriber from './subscriber'
 
 export default class ArdaContext extends Arda.Context {
-    get subscribers() { return [require('./subscriber')]; }
-    get component() { return require('../components/App.jsx'); }
+    get subscribers() { return [subscriber]; }
+    get component() { return AppComponent; }
 
     initState(props) {
         return {
