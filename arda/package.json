@@ -17,8 +17,5 @@
       ],
       "envify"
     ]
-  },
-  "dependencies": {
-    "arda": "^0.13.1"
   }
 }
