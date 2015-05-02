@@ -28,23 +28,25 @@ The list of Flux related implementations used in this demo.
 
 ### Ready
 
-| Homepage                                | Example                                                                                     | Github Stars | License |
-| -------------                           | ------------------------------------------------------------------------------------------- | ------------ | ------- |
-| https://github.com/facebook/flux        | [Facebook Flux](https://github.com/voronianski/flux-samples/tree/master/facebook-flux)      | 5,8k         | BSD     |
-| http://fluxible.io                      | [Fluxible by Yahoo](https://github.com/voronianski/flux-samples/tree/master/yahoo-fluxible) | 0,6k         | BSD     |
-| https://github.com/spoike/refluxjs      | [Reflux](https://github.com/voronianski/flux-samples/tree/master/reflux)                    | 2,3k         | BSD     |
-| https://github.com/goatslacker/alt      | [Alt](https://github.com/voronianski/flux-samples/tree/master/alt)                          | 0,7k         | MIT     |
-| https://github.com/acdlite/flummox      | [Flummox](https://github.com/voronianski/flux-samples/tree/master/flummox)                  | 0,8k         | MIT     |
-| http://martyjs.org                      | [Marty.js](https://github.com/voronianski/flux-samples/tree/master/marty)                   | 0,9k         | MIT     |
-| https://github.com/kenwheeler/mcfly     | [McFly](https://github.com/voronianski/flux-samples/tree/master/mcfly)                      | 0,7k         | BSD     |
-| https://github.com/LeanKit-Labs/lux.js  | [Lux](https://github.com/voronianski/flux-comparison/tree/master/lux)                       | 0,02k        | MIT     |
-| https://github.com/azu/material-flux    | [Material Flux](https://github.com/voronianski/flux-comparison/tree/master/material-flux)   | 0,03k        | MIT     |
+| Homepage                                | Example                                                                                     | Github Stars | SLOC | License |
+| -------------                           | ------------------------------------------------------------------------------------------- | ------------ | ---- | ------- |
+| https://github.com/facebook/flux        | [Facebook Flux](https://github.com/voronianski/flux-samples/tree/master/facebook-flux)      | 5,8k         | 115  | BSD     |
+| http://fluxible.io                      | [Fluxible by Yahoo](https://github.com/voronianski/flux-samples/tree/master/yahoo-fluxible) | 0,6k         | 359  | BSD     |
+| https://github.com/spoike/refluxjs      | [Reflux](https://github.com/voronianski/flux-samples/tree/master/reflux)                    | 2,3k         | 680  | BSD     |
+| https://github.com/goatslacker/alt      | [Alt](https://github.com/voronianski/flux-samples/tree/master/alt)                          | 0,7k         | 1015 | MIT     |
+| https://github.com/acdlite/flummox      | [Flummox](https://github.com/voronianski/flux-samples/tree/master/flummox)                  | 0,8k         | 732  | MIT     |
+| http://martyjs.org                      | [Marty.js](https://github.com/voronianski/flux-samples/tree/master/marty)                   | 0,9k         | 2662 | MIT     |
+| https://github.com/kenwheeler/mcfly     | [McFly](https://github.com/voronianski/flux-samples/tree/master/mcfly)                      | 0,7k         | 305  | BSD     |
+| https://github.com/LeanKit-Labs/lux.js  | [Lux](https://github.com/voronianski/flux-comparison/tree/master/lux)                       | 0,02k        | 695  | MIT     |
+| https://github.com/azu/material-flux    | [Material Flux](https://github.com/voronianski/flux-comparison/tree/master/material-flux)   | 0,03k        | 120  | MIT     |
 
 ### Next
 
-* [ ] Fynx
-* [ ] [Fluxxor](http://fluxxor.com)
-* [ ] [Delorean.js](http://deloreanjs.com)
+| Homepage                                | Example                                                                                     | Github Stars | SLOC | License |
+| -------------                           | ------------------------------------------------------------------------------------------- | ------------ | ---- | ------- |
+| Fynx                                    |                                                                                             |              |      |         |
+| http://fluxxor.com                      |                                                                                             | 1,2k         | 425  |         |
+| http://deloreanjs.com                   |                                                                                             | 0,6k         | 445  | MIT     |
 
 _You're welcome to create [issues](https://github.com/voronianski/flux-comparison/issues) with suggestions or even make your own [pull-requests](https://github.com/voronianski/flux-comparison/pulls) (but before please take a look on [contributing guidelines](https://github.com/voronianski/flux-comparison/blob/master/CONTRIBUTING.md))._
 
