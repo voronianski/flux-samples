@@ -28,17 +28,17 @@ The list of Flux related implementations used in this demo.
 
 ### Ready
 
-| Homepage                                | Example                                                                                     | Github Stars |
-| -------------                           | ------------------------------------------------------------------------------------------- | ------------ |
-| https://github.com/facebook/flux        | [Facebook Flux](https://github.com/voronianski/flux-samples/tree/master/facebook-flux)      | 5,8k         |
-| http://fluxible.io                      | [Fluxible by Yahoo](https://github.com/voronianski/flux-samples/tree/master/yahoo-fluxible) | 0,6k         |
-| https://github.com/spoike/refluxjs      | [Reflux](https://github.com/voronianski/flux-samples/tree/master/reflux)                    | 2,3k         |
-| https://github.com/goatslacker/alt      | [Alt](https://github.com/voronianski/flux-samples/tree/master/alt)                          | 0,7k         |
-| https://github.com/acdlite/flummox      | [Flummox](https://github.com/voronianski/flux-samples/tree/master/flummox)                  | 0,8k         |
-| http://martyjs.org                      | [Marty.js](https://github.com/voronianski/flux-samples/tree/master/marty)                   | 0,9k         |
-| https://github.com/kenwheeler/mcfly     | [McFly](https://github.com/voronianski/flux-samples/tree/master/mcfly)                      | 0,7k         |
-| https://github.com/LeanKit-Labs/lux.js  | [Lux](https://github.com/voronianski/flux-comparison/tree/master/lux)                       | 0,02k        |
-| https://github.com/azu/material-flux    | [Material Flux](https://github.com/voronianski/flux-comparison/tree/master/material-flux)   | 0,03k        |
+| Homepage                                | Example                                                                                     | Github Stars | License |
+| -------------                           | ------------------------------------------------------------------------------------------- | ------------ | ------- |
+| https://github.com/facebook/flux        | [Facebook Flux](https://github.com/voronianski/flux-samples/tree/master/facebook-flux)      | 5,8k         | BSD     |
+| http://fluxible.io                      | [Fluxible by Yahoo](https://github.com/voronianski/flux-samples/tree/master/yahoo-fluxible) | 0,6k         | BSD     |
+| https://github.com/spoike/refluxjs      | [Reflux](https://github.com/voronianski/flux-samples/tree/master/reflux)                    | 2,3k         | BSD     |
+| https://github.com/goatslacker/alt      | [Alt](https://github.com/voronianski/flux-samples/tree/master/alt)                          | 0,7k         | MIT     |
+| https://github.com/acdlite/flummox      | [Flummox](https://github.com/voronianski/flux-samples/tree/master/flummox)                  | 0,8k         | MIT     |
+| http://martyjs.org                      | [Marty.js](https://github.com/voronianski/flux-samples/tree/master/marty)                   | 0,9k         | MIT     |
+| https://github.com/kenwheeler/mcfly     | [McFly](https://github.com/voronianski/flux-samples/tree/master/mcfly)                      | 0,7k         | BSD     |
+| https://github.com/LeanKit-Labs/lux.js  | [Lux](https://github.com/voronianski/flux-comparison/tree/master/lux)                       | 0,02k        | MIT     |
+| https://github.com/azu/material-flux    | [Material Flux](https://github.com/voronianski/flux-comparison/tree/master/material-flux)   | 0,03k        | MIT     |
 
 ### Next
 
